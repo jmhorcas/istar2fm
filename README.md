@@ -10,7 +10,7 @@ iStar models are built using the [piStar tool](http://www.cin.ufpe.br/~jhcp/pist
 
 
 ## References
-[iStar 2.0 language guide](https://arxiv.org/abs/1605.07767) 
+[iStar 2.0 language guide](https://arxiv.org/abs/1605.07767)  
 [piStar repository](https://github.com/jhcp/piStar)  
 
 
