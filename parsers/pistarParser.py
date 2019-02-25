@@ -21,24 +21,24 @@ class PiStarParser():
         data = self.read()
         for a in data['actors']:
             actor_type = self.__extract_type(a)
-            actor = self.istar_model.add_actor(actor_type, a['id'], a['text'])
+            actor = self.istar_model.add_actor(a['id'], a['text'], actor_type)
 
             for n in a['nodes']:
                 ie_type = self.__extract_type(n)
-                ie = self.istar_model.add_intentional_element(actor, ie_type, n['id'], n['text'])
+                ie = self.istar_model.add_intentional_element(n['id'], n['text'], actor, ie_type)
 
         for d in data['dependencies']:
             dependency_type = self.__extract_type(d)
-            self.istar_model.add_dependency(dependency_type, d['source'], d['target'], d['id'], d['text'])
+            self.istar_model.add_dependency_from_source_target(d['id'], d['text'], d['source'], d['target'], dependency_type)
 
         for l in data['links']:
             link_type = self.__extract_type(l)
             if link_type == "ContributionLink":
                 contribution = self.istar_model.add_contribution(l['source'], l['target'], l['label'].capitalize())
             elif link_type == "AndRefinementLink":
-                refinement = self.istar_model.add_refinement(link_type[:4].upper() + link_type[4:-4], l['source'], l['target'])
+                refinement = self.istar_model.add_refinement(l['source'], l['target'], link_type[:4].upper() + link_type[4:-4])
             elif link_type == "OrRefinementLink":
-                refinement = self.istar_model.add_refinement(link_type[:3].upper() + link_type[3:-4], l['source'], l['target'])
+                refinement = self.istar_model.add_refinement(l['source'], l['target'], link_type[:3].upper() + link_type[3:-4])
             elif link_type == "QualificationLink":
                 self.istar_model.add_qualifies_association(l['source'], l['target'])
             elif link_type == "NeededByLink":
