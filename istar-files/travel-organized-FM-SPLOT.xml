@@ -1,0 +1,64 @@
+<feature_model name="travelorganize">
+<meta>
+<data name="creator">fm2splot converter tool</data>
+<data name="date">2019-02-27</data>
+<data name="organization">CAOSD group (Universidad de Málaga)</data>
+<data name="address">Málaga (Spain)</data>
+<data name="website">http://caosd.lcc.uma.es/</data>
+</meta>
+<feature_tree>
+:r MyFeatureRoot (MyFeatureRoot)
+	:g (_id0) [1,*]
+		: PhDstudent (12d994f6-f69d-4f13-bc6d-6afd95751ddb)
+			:m PhDstudentGoals (PhDstudentGoals)
+			:o PhDstudentPlans (PhDstudentPlans)
+			:o PhDstudentContext (PhDstudentContext)
+			:o PhDstudentQAs (PhDstudentQAs)
+		: Student (9a046e98-b0e6-4134-8339-cf8fc02ec564)
+			:m StudentGoals (StudentGoals)
+				:m Travelorganized (02c1940a-7fe8-41a3-ac9f-aea4dd9c498e)
+					:g (_id3) [2,*]
+						: Authorizationobtained (63f9e049-6ad9-4ca3-b8a7-d6c98e69a99b)
+							:g (_id4) [2,*]
+								: Requestprepared (bd825479-82fc-4cf0-bf7c-dbbac4656d95)
+								: Authorizationsigned (8a5ef5c1-0a89-47a0-b98c-f70b4821e337)
+						: Tripbooked (8d30db9e-5fe2-4f9b-94f9-b442f3049952)
+							:o Trippartsbooked (8ad4a940-58f9-4096-b22f-84bf025ce1eb)
+								:g (_id5) [2,*]
+									: Ticketsbooked (93c109fc-8b02-405e-b3df-dc3fee5edcb0)
+									: Accommodationbooked (9e8957f2-9987-45b7-a5b2-fb03cda59a80)
+										:g (_id6) [2,*]
+											: Conferencehotelbooked (653aa4b3-5c5d-4296-8564-54b6e44c365b)
+											: Budgethotelbooked (5fc2cb5e-c3d6-4832-b6fe-3cef1ec1a36d)
+			:o StudentPlans (StudentPlans)
+				:o Fillinpaperform (1035d011-53cc-471c-aada-7d9a047eafee)
+				:o Fillinonlineform (09f1bc2c-47d9-4550-93a8-b6d69531e141)
+				:o Supervisorauthorizes (dc5d23dc-7e16-47db-b508-e536c3902e0a)
+				:o Head-of-deptauthorizes (b1caaeaf-9a76-4253-b448-bf1704458e35)
+				:o Bookbundle (eeb14eb0-deaf-4a3b-86fa-619e786f021a)
+				:o Agencybuystickets (3cf9eece-eacf-443a-9287-0ccc58bfd8b1)
+				:o Self-booktickets (47db3bcd-3f9a-423b-8a96-57fe42fd0c00)
+					:g (_id3) [2,*]
+						: Buytickets (5cfb8ee2-159a-419e-b457-35a8dc216234)
+						: Payfortickets (45bc1ad3-0b9e-42dc-ae7c-19625806bf7f)
+				:o Buythroughbooking.com (7af22710-b7a4-4015-b65f-584d9992c38e)
+				:o Buythroughhotelwebsite (7d485f94-83cc-49eb-b529-a0970fe2c505)
+			:o StudentContext (StudentContext)
+				:o Creditcard (d9b7722e-4be9-45f8-b4c0-08fb5ca1ec2c)
+			:o StudentQAs (StudentQAs)
+				:o Noerrors (50ed221c-e8d6-49f7-af16-ce0cc8e350f1)
+				:o Minimalownpayments (4ca25932-73c9-4636-8b1f-d93de24cf406)
+				:o Comfort (1c578d05-da0b-4487-9e3b-a799af3386f0)
+				:o Quickbooking (7e1666fd-ea57-4a67-905a-cf1f69b8b530)
+		: Travelagency (f9e68ced-07ea-43d9-b6cf-bcdf97386cbe)
+			:m TravelagencyGoals (TravelagencyGoals)
+				:m Tripbundlebooked (a6264c1d-e2c5-4716-9a59-17f043f7da0b)
+			:o TravelagencyPlans (TravelagencyPlans)
+				:o Bookbundleviaexpedia (6dd81846-4d14-4258-9139-27f91dbd9d42)
+				:o Buyflighttickets (c2fbc78f-192d-4d70-aa14-ffa113a68d23)
+			:o TravelagencyContext (TravelagencyContext)
+			:o TravelagencyQAs (TravelagencyQAs)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>
