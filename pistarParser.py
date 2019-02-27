@@ -74,7 +74,7 @@ class PiStarParser():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="""Translate a i* model generated with the PiStar tool (JSON in .txt) to a i* model (.xmi) conformed to the i* 2.0 metamodel."""
+        description="""It translates a i* model generated with the PiStar tool (JSON in .txt) to a i* model (.xmi) conformed to the i* 2.0 metamodel."""
     )
 
     parser.add_argument('-f', '--file', required=True, help='i* model (.txt) file generated with the PiStar tool',  dest='filename')
