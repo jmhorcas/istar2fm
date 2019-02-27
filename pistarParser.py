@@ -18,13 +18,14 @@ References:
     i* 2.0 metamodel: https://arxiv.org/abs/1605.07767
 """
 
+import argparse
 import json
-from ../istarModel import IStarModel
+import istarModel
 
 class PiStarParser():
     def __init__(self, filename):
         self.filename = filename
-        self.istar_model = IStarModel()
+        self.istar_model = istarModel.IStarModel()
 
     def read(self):
         with open(self.filename, 'r') as f:
@@ -80,6 +81,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     filename = args.filename
 
-    p = pistarParser.PiStarParser(filename)
+    p = PiStarParser(filename)
     p.parse()
     p.generate_xmi_model()
