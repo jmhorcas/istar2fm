@@ -1,25 +1,48 @@
+"""
+It manages metamodels (.ecore) using the pyecore library.
+
+References:
+    PyEcore: https://pyecore.readthedocs.io/en/latest/
+
+"""
+
 from pyecore.resources import ResourceSet, URI
 from pyecore.utils import DynamicEPackage
 import pyecore.ecore as Ecore
 
 class Metamodel():
+    """It loads a metamodel and allows creating instances of its entities.
+
+    Attributes:
+        metamodel (Ecore): The Ecore metamodel.
+
+    """
+    
     def __init__(self, metamodel):
-        #global_registry[Ecore.nsURI] = Ecore  # We load the Ecore metamodel first
-        self.__import_xmi_metamodel(metamodel)
-        self.__adding_external_resources()
+        """Load the metamodel.
 
-    def __import_xmi_metamodel(self, metamodel):
-        self.rset = ResourceSet()
-        resource = self.rset.get_resource(URI(metamodel))
-        mm_root = resource.contents[0]
-        self.rset.metamodel_registry[mm_root.nsURI] = mm_root
-        self.metamodel = mm_root
+        Args:
+            metamodel (str): Filename (.ecore) of the metamodel.
 
-    def __adding_external_resources(self):
-        """External resources for metamodel loading should be added in the resource set.
-        For example, some metamodels use the XMLType instead of the Ecore one.
-        The resource creation should be done by hand first:
         """
+        self._rset = ResourceSet()
+        resource = self._rset.get_resource(URI(metamodel))
+        mm_root = resource.contents[0]
+        self._rset.metamodel_registry[mm_root.nsURI] = mm_root
+        self.metamodel = mm_root
+        self._add_external_resources()
+
+    def get_class(self, entity):
+        """Create a new instance of the specified metamodel's entity.
+
+        Args:
+            entity (str): Name of the EClass in the metamodel.
+
+        """
+        return self.metamodel.getEClassifier(entity)
+
+    def _add_external_resources(self):
+        """Add external resources for the metamodel such as XMLType."""
         int_conversion = lambda x: int(x)  # translating str to int durint load()
         String = Ecore.EDataType('String', str)
         Double = Ecore.EDataType('Double', int, 0, from_string=int_conversion)
@@ -42,8 +65,4 @@ class Metamodel():
         xmltype.nsURI = 'http://www.eclipse.org/emf/2003/XMLType'
         xmltype.nsPrefix = 'xmltype'
         xmltype.name = 'xmltype'
-        self.rset.metamodel_registry[xmltype.nsURI] = xmltype
-
-    def get_class(self, entity):
-        """Get an entity class from the metamodel that allows create a new instance of that class."""
-        return self.metamodel.getEClassifier(entity)
+        self._rset.metamodel_registry[xmltype.nsURI] = xmltype
