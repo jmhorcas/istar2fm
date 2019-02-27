@@ -17,6 +17,9 @@ def clean_str(s):
     s = s.replace(' ', '')
     return s
 
+def clean_id(s):
+    return '_' + clean_str(s)
+
 def add_exclusive_constraints(fm, names):
     for n in names:
         constraint = n + ' implies not ('
@@ -24,11 +27,11 @@ def add_exclusive_constraints(fm, names):
             if n != n2:
                 constraint += n2 + ' or '
         constraint = constraint[:-4] + ')'
-        fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
+        fm.add_constraint('_' + constraint, 'First-order logic', constraint)
 
 def add_intentional_element(istar, fm, ie, ie_type, parent_feature, variability_type, lower=0, upper=-1):
     processed = []
-    id = clean_str(ie.id)
+    id = clean_id(ie.id)
     feature = fm.get_feature(id)
     if feature is not None:     # si la feature ya existía la elimino y la vuelvo a crear para actualizar su información adecuadamente (padre y tipo de variabilidad)
         feature.delete()
@@ -53,12 +56,12 @@ def add_intentional_element(istar, fm, ie, ie_type, parent_feature, variability_
                     for or_ie in or_group:
                         processed += add_intentional_element(istar, fm, or_ie, ie_type, feature, 'optional')
 
-                    constraint = clean_str(ie.name) + ' implies ('
+                    constraint = clean_id(ie.id) + ' implies ('
                     for child in ie.refines.to:
-                        constraint += clean_str(child.name) + ' or '
+                        constraint += clean_id(child.id) + ' or '
                     constraint = constraint[:-4] + ')'
-                    fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
-                    add_exclusive_constraints(fm, [clean_str(e.name) for e in ie.refines.to])
+                    fm.add_constraint('_' + constraint, 'First-order logic', constraint)
+                    add_exclusive_constraints(fm, [clean_id(e.id) for e in ie.refines.to])
             elif isinstance(ie.refines, istar.istar_metamodel.get_class('ANDRefinement')):
                 and_group = []
                 ie_constraints = []
@@ -71,11 +74,11 @@ def add_intentional_element(istar, fm, ie, ie_type, parent_feature, variability_
                 for and_ie in and_group:
                     processed += add_intentional_element(istar, fm, and_ie, ie_type, feature, 'mandatory')
                 if len(ie_constraints) > 0:
-                    constraint = clean_str(ie.name) + ' implies ('
+                    constraint = clean_id(ie.id) + ' implies ('
                     for child in ie_constraints:
-                        constraint += clean_str(child.name) + ' and '
+                        constraint += clean_id(child.id) + ' and '
                     constraint = constraint[:-4] + ')'
-                    fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
+                    fm.add_constraint('_' + constraint, 'First-order logic', constraint)
     return processed
 
 def add_intentional_elements(istar, fm, elements, elements_type, root_feature, variability_type):
@@ -91,21 +94,21 @@ def add_cognitive_model(istarModel, fm, actor, name, root_feature):
     contextF = fm.add_feature(name+'Context', name+'Context', root_feature, 'optional')
     qualityattributesF = fm.add_feature(name+'QAs', name+'QAs', root_feature, 'optional')
 
-    goals = add_intentional_elements(istarModel, fm, istarModel.get_goals(actor), 'Goal', goalsF, 'mandatory')
+    goals = add_intentional_elements(istarModel, fm, istarModel.get_goals(actor), 'Goal', goalsF, 'optional')       # ponerlo mandatory creará deade features
     tasks = add_intentional_elements(istarModel, fm, istarModel.get_tasks(actor), 'Task', plansF, 'optional')
     resources = add_intentional_elements(istarModel, fm, istarModel.get_resources(actor), 'Resource', contextF, 'optional')
     qualities = add_intentional_elements(istarModel, fm, istarModel.get_qualities(actor), 'Quality', qualityattributesF, 'optional')
 
     for r in resources:
         for t in r.neededBy:
-            constraint = clean_str(t.name) + " implies " + clean_str(r.name)
-            fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
+            constraint = clean_id(t.id) + " implies " + clean_id(r.id)
+            fm.add_constraint('_' + constraint, 'First-order logic', constraint)
 
     for ie in goals+tasks+resources+qualities:
         for c in ie.contribution:
             if str(c.type) in ['Make', 'Help']:
                 qa = c.contributesTo
-                constraint = clean_str(qa.name) + " implies " + clean_str(ie.name)
+                constraint = clean_id(qa.id) + " implies " + clean_id(ie.id)
                 fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
 
     # Qualification is optional for the user, in other case it would create dead features
@@ -129,7 +132,7 @@ def add_cognitive_model(istarModel, fm, actor, name, root_feature):
 def add_roles(istarModel, fm, root_feature):
     for r in istarModel.get_roles():
         name = clean_str(r.name)
-        id = clean_str(r.id)
+        id = clean_id(r.id)
         f = fm.add_clonable_feature(id, name, parent=root_feature, variability_type='or')
         add_cognitive_model(istarModel, fm, r, name, f)
 
@@ -142,14 +145,14 @@ def add_actors_only(istarModel, fm, root_feature):
 
     for a in actors:
         name = clean_str(a.name)
-        id = clean_str(a.id)
+        id = clean_id(a.id)
         f = fm.add_feature(id, name, parent=root_feature, variability_type='or')
         add_cognitive_model(istarModel, fm, a, name, f)
 
 def add_agents(istarModel, fm, root_feature):
     for a in istarModel.get_agents():
         name = clean_str(a.name)
-        id = clean_str(a.id)
+        id = clean_id(a.id)
         f = fm.add_feature(id, name, parent=root_feature, variability_type='or')
         add_cognitive_model(istarModel, fm, a, name, f)
 
