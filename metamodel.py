@@ -7,7 +7,6 @@ References:
 """
 
 from pyecore.resources import ResourceSet, URI
-from pyecore.utils import DynamicEPackage
 import pyecore.ecore as Ecore
 
 class Metamodel():
@@ -17,7 +16,7 @@ class Metamodel():
         metamodel (Ecore): The Ecore metamodel.
 
     """
-    
+
     def __init__(self, metamodel):
         """Load the metamodel.
 
@@ -40,6 +39,28 @@ class Metamodel():
 
         """
         return self.metamodel.getEClassifier(entity)
+
+    def get_resource(self, filename):
+        """Obtain a resource.
+
+        Use this method to load a model conformed to the metamodel.
+
+        Args:
+            filename (str): Filename of the resource.
+
+        """
+        return self._rset.get_resource(URI(filename))
+
+    def create_resource(self, filename):
+        """Create a new resource.
+
+        Use this method to save a model conformed to the metamodel.
+
+        Args:
+            filename (str): Filename for the resource.
+
+        """
+        return self._rset.create_resource(URI(filename))
 
     def _add_external_resources(self):
         """Add external resources for the metamodel such as XMLType."""
