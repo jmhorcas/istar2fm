@@ -1,29 +1,55 @@
-from pyecore.ecore import EClass, EAttribute, EString, EObject
-from pyecore.resources import URI
-from metamodel import Metamodel
+"""
+It manages feature models (FM models).
+
+References:
+    Feature Model: https://en.wikipedia.org/wiki/Feature_model
+
+"""
+
+import metamodel
 
 FM_METAMODEL = 'metamodels/featureModelMetamodel.ecore'
 
 class FeatureModel():
+    """It represents a feature model (FM).
+
+    Attributes:
+        metamodel (metamodel.Metamodel): The FM metamodel.
+        model (pyecore.ecore.FeatureModel): The FM.
+
+    """
+
     def __init__(self):
-        self.metamodel = Metamodel(FM_METAMODEL)
+        """Create a new empty FM."""
+        self.metamodel = metamodel.Metamodel(FM_METAMODEL)
         self.model = self.metamodel.get_class('FeatureModel')()
 
     def get_model(self):
-        """ The model."""
         return self.model
 
     def save_model(self, filename):
         """Save the model in a .xmi file."""
-        resource = self.metamodel.rset.create_resource(URI(filename))
+        resource = self.metamodel.create_resource(filename)
         resource.append(self.model)
         resource.save()
 
     def load_model(self, filename):
         """Load a model from the .xmi file."""
-        resource = self.metamodel.rset.get_resource(URI(filename))
+        resource = self.metamodel.get_resource(filename)
         self.model = resource.contents[0]
 
+    def get_feature(self, id):
+        return next((f for f in self.model.features if f.id == id), None)
+
+    def get_root(self):
+        return next((f for f in self.model.features if f.parent == None), None)
+
+    def get_features(self):
+        return list(self.model.features)
+
+    def get_constraints(self):
+        return list(self.model.constraints)
+    
     def add_feature(self, id, name, parent=None, variability_type='optional', gMultLower=1, gMultUpper=-1, feature_type='Feature'):
         if parent is None and variability_type in ['alternative', 'or']:
             return None
@@ -51,15 +77,3 @@ class FeatureModel():
         constraint = self.metamodel.get_class('Constraint')(id=id, language=language, code=code)
         self.model.constraints.append(constraint)
         return constraint
-
-    def get_feature(self, id):
-        return next((f for f in self.model.features if f.id == id), None)
-
-    def get_root(self):
-        return next((f for f in self.model.features if f.parent == None), None)
-
-    def get_features(self):
-        return list(self.model.features)
-
-    def get_constraints(self):
-        return list(self.model.constraints)

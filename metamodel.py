@@ -32,7 +32,10 @@ class Metamodel():
         self._add_external_resources()
 
     def get_class(self, entity):
-        """Create a new instance of the specified metamodel's entity.
+        """Obtain the EClass of the specified entity concept.
+
+        Note:
+            Use this method to create new instances of a metamodel's entity.
 
         Args:
             entity (str): Name of the EClass in the metamodel.
@@ -43,22 +46,28 @@ class Metamodel():
     def get_resource(self, filename):
         """Obtain a resource.
 
-        Use this method to load a model conformed to the metamodel.
+        Note:
+            Use this method to load a model conformed to the metamodel.
 
         Args:
             filename (str): Filename of the resource.
 
+        Returns:
+            The resource.
         """
         return self._rset.get_resource(URI(filename))
 
     def create_resource(self, filename):
         """Create a new resource.
 
-        Use this method to save a model conformed to the metamodel.
+        Note:
+            Use this method to save a model conformed to the metamodel.
 
         Args:
             filename (str): Filename for the resource.
 
+        Returns:
+            The resource.
         """
         return self._rset.create_resource(URI(filename))
 
