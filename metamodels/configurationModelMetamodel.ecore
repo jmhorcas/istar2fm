@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="configurationModelMetamodel" nsURI="http://caosd.lcc.uma.es/configurationModelMetamodel"
+    nsPrefix="configurationModelMetamodel">
+  <eClassifiers xsi:type="ecore:EClass" name="ConfigurationModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="selections" upperBound="-1"
+        eType="#//Selection" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="featuremodel" lowerBound="1"
+        eType="ecore:EClass featureModelMetamodel.ecore#//FeatureModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Selection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feature" lowerBound="1"
+        eType="ecore:EClass featureModelMetamodel.ecore#//Feature"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EEnum variantmodel.ecore#//SelectionState"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
+        iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SelectionState">
+    <eLiterals name="selected"/>
+    <eLiterals name="unselected" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>
