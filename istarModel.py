@@ -25,7 +25,8 @@ class IStarModel():
         self.istar_model = resource.contents[0]
 
     def get_actors(self):
-        return list(self.istar_model.actors)
+        #return list(self.istar_model.actors)
+        return [a for a in self.istar_model.actors if isinstance(a, self.istar_metamodel.get_class('Actor'))]
 
     def get_agents(self):
         return [a for a in self.istar_model.actors if isinstance(a, self.istar_metamodel.get_class('Agent'))]
@@ -46,8 +47,9 @@ class IStarModel():
         return self.__get_intentional_elements(actor, 'Quality')
 
     def __get_intentional_elements(self, actor, class_type=None):
-        intentional_elements = actor.wants
+        intentional_elements = list(actor.wants)
         intentional_elements += [d.dependum for d in self.istar_model.dependencies if d.dependee == actor]
+
         if class_type is None:
             return intentional_elements
         else:
@@ -107,6 +109,11 @@ class IStarModel():
         if dependee is None:
             dependee = self.__search_actor(target)
 
+        # print("dependum: " + name)
+        # print("depender: " + str(depender))
+        # print("dependerElmt: " + str(dependerElmt))
+        # print("dependee: " + str(dependee))
+        # print("dependeeElmt: " + str(dependeeElmt))
         return self.add_dependency(id, name, depender, dependerElmt, dependee, dependeeElmt, class_type)
 
     def add_contribution(self, source, target, contribution_type):

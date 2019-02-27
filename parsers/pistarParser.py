@@ -55,3 +55,4 @@ class PiStarParser():
     def generate_xmi_model(self):
         filename = self.filename[:-4] + ".xmi"
         self.istar_model.save_model(filename)
+        return filename
