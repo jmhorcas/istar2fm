@@ -198,10 +198,12 @@ def add_cognitive_model(istarModel, fm, actor, name, root_feature):
 
     for ie in goals+tasks+resources+qualities:
         for c in ie.contribution:
+            qa = c.contributesTo
             if str(c.type) in ['Make', 'Help']:
-                qa = c.contributesTo
-                constraint = clean_id(qa.id) + " implies " + clean_id(ie.id)
-                fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
+                constraint = clean_id(ie.id) + " implies " + clean_id(qa.id)
+            elif str(c.type) in ['Hurt', 'Break']:
+                constraint = clean_id(ie.id) + " implies not " + clean_id(qa.id)
+            fm.add_constraint(clean_str(constraint), 'First-order logic', constraint)
 
     # Qualification is optional for the user, in other case it would create dead features
     # for qa in qualities:
@@ -296,6 +298,17 @@ def generate_feature_model(istarModel):
     add_actors_only(istarModel, fm, root)
     #add_agents(istarModel, fm, root)   # Esto es para las configuraciones
     return fm
+
+def generate_configuration_model(istarModel):
+    """It creates an empty configuration model and adds all main i* concepts (agents) including all its intentional elements.
+
+    Args:
+        istarModel (IStarModel): The i* model.
+
+    """
+    fm = featureModel.ConfigurationModel()
+    root = fm.add_feature(id='MyFeatureRoot', name='MyFeatureRoot', variability_type='mandatory')
+
 
 def istar2fm(filename):
     """It loads the i* model and generates a new feature model by mapping the i* model to the FM concepts.
