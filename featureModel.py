@@ -41,6 +41,9 @@ class FeatureModel():
     def get_feature(self, id):
         return next((f for f in self.model.features if f.id == id), None)
 
+    def get_feature_by_name(self, name):
+        return next((f for f in self.model.features if f.name == name), None)
+
     def get_root(self):
         return next((f for f in self.model.features if f.parent == None), None)
 
@@ -49,7 +52,7 @@ class FeatureModel():
 
     def get_constraints(self):
         return list(self.model.constraints)
-    
+
     def add_feature(self, id, name, parent=None, variability_type='optional', gMultLower=1, gMultUpper=-1, feature_type='Feature'):
         if parent is None and variability_type in ['alternative', 'or']:
             return None
@@ -77,3 +80,6 @@ class FeatureModel():
         constraint = self.metamodel.get_class('Constraint')(id=id, language=language, code=code)
         self.model.constraints.append(constraint)
         return constraint
+
+    def is_clonable_child(self, feature):
+        return parent.parent != None and (isinstance(feature.parent, self.metamodel.get_class('ClonableFeature')) or is_clonable_child(feature.parent))

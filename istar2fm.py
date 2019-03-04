@@ -21,6 +21,7 @@ References:
 import argparse
 import istarModel
 import featureModel
+import configurationFM
 
 def clean_str(s):
     """Remove special characters from a name o ID."""
@@ -136,7 +137,7 @@ def add_intentional_element(istar, fm, ie, ie_type, parent_feature, variability_
                     constraint = clean_id(ie.id) + ' implies ('
                     for child in ie_constraints:
                         constraint += clean_id(child.id) + ' and '
-                    constraint = constraint[:-4] + ')'
+                    constraint = constraint[:-5] + ')'
                     fm.add_constraint('_' + constraint, 'First-order logic', constraint)
     return processed
 
@@ -299,16 +300,38 @@ def generate_feature_model(istarModel):
     #add_agents(istarModel, fm, root)   # Esto es para las configuraciones
     return fm
 
-def generate_configuration_model(istarModel):
+def generate_configuration_model(istarModel, fm):
     """It creates an empty configuration model and adds all main i* concepts (agents) including all its intentional elements.
 
     Args:
         istarModel (IStarModel): The i* model.
 
     """
-    fm = featureModel.ConfigurationModel()
-    root = fm.add_feature(id='MyFeatureRoot', name='MyFeatureRoot', variability_type='mandatory')
+    config = configurationFM.FMConfiguration(fm)
+    instance_number = 1
+    for a in istarModel.get_agents():
+        if len(a.participatesIn) > 0:
+            role = a.participatesIn[0]
+            clonable_feature = fm.get_feature(clean_id(role.id))
+            instance = config.add_clonable_selection(clean_str(a.name), instance_number, clonable_feature)
+            # Add abstract nodes (Goals, Tasks, Resources, Qualities)
+            for child in clonable_feature.children:
+                config.add_clonable_selection(child.name, instance_number, child)
 
+            # Add intentional_elements
+            ies = []
+            ies += istarModel.get_goals(a)
+            ies += istarModel.get_tasks(a)
+            ies += istarModel.get_resources(a)
+            ies += istarModel.get_qualities(a)
+            for ie in ies:
+                #f = fm.get_feature(clean_id(ie.id))    # no se puede hacer por ID porque en i* cada nodo tiene un ID diferente (i* no diferencia configuraciones).
+                name = clean_str(ie.name)
+                f = fm.get_feature_by_name(name)
+                if f != None:
+                    config.add_clonable_selection(name, instance_number, f)
+            instance_number += 1
+    return config
 
 def istar2fm(filename):
     """It loads the i* model and generates a new feature model by mapping the i* model to the FM concepts.
@@ -322,6 +345,9 @@ def istar2fm(filename):
 
     fm = generate_feature_model(m)
     fm.save_model(filename[:-4] + "-FM.xmi")
+
+    config = generate_configuration_model(m, fm)
+    config.save_model(filename[:-4] + "-FMconfig.xmi")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
