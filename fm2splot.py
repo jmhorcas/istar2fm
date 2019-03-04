@@ -12,10 +12,11 @@ import sympy
 
 EOL = '\n'
 TAB = '\t'
-ORGANIZATION = "CAOSD group (Universidad de Málaga)"
-ADDRESS = "Málaga (Spain)"
+ORGANIZATION = "CAOSD group (Universidad de Malaga)"
+ADDRESS = "Malaga (Spain)"
 WEBSITE = "http://caosd.lcc.uma.es/"
 
+CONSTRAINTS_RESERVED = ['implies', 'or', 'and', 'not']
 
 def headers(filename):
     feature_model_name = filename.split('/')[-1][:-4].replace('-', '')
@@ -79,9 +80,8 @@ def feature_tree(fm):
 
     return tree
 
-CONSTRAINTS_RESERVED = ['implies', 'or', 'and', 'not']
-
 def extract_symbols(constraint):
+    print(constraint)
     symbols = constraint.split()
     symbols = [x for x in symbols if x not in CONSTRAINTS_RESERVED]
     symbols = [x.replace('(', '').replace(')', '') for x in symbols]
@@ -100,8 +100,8 @@ def to_cnf(constraint):
     symbols = extract_symbols(constraint)
     formula_str = from_constraint_to_formula(constraint)
 
-    #print("F: " + formula_str)
-    #print("S: " + str(symbols))
+    print("F: " + formula_str)
+    print("S: " + str(symbols))
     x = sympy.symbols(symbols)
     formula = sympy.to_cnf(formula_str)
 
