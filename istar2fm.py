@@ -11,7 +11,7 @@ Input:
     <istar-model.xmi> is the i* model conformed to the i* 2.0 metamodel.
 
 Output:
-    <fm-model.xmi> is the feature model conformed to its metamodel.
+    <fm-model-FM.xmi> is the feature model conformed to its metamodel.
 
 References:
     i* 2.0 metamodel: https://arxiv.org/abs/1605.07767

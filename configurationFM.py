@@ -1,5 +1,5 @@
 """
-It manages configuration of feature models (FM models).
+It manages a configuration of a feature model (FM).
 
 References:
     Feature Model: https://en.wikipedia.org/wiki/Feature_model

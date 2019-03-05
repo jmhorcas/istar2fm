@@ -3,6 +3,20 @@
 
 """
 Script to generate a S.P.L.O.T. model in the SXFM format from a .xmi feature model.
+
+Usage:
+    python fm2splot.py --file <fm-model.xmi>
+
+Input:
+    <fm-model.xml> is the feature model conformed to its metamodel.
+
+Output:
+    <fm-model-SPLOT.xmi> is the feature model conformed to the SPLOT format (SXFM).
+
+References:
+    S.P.L.O.T.: http://www.splot-research.org/
+    Feature Model: https://en.wikipedia.org/wiki/Feature_model
+
 """
 
 import argparse
@@ -81,7 +95,6 @@ def feature_tree(fm):
     return tree
 
 def extract_symbols(constraint):
-    print(constraint)
     symbols = constraint.split()
     symbols = [x for x in symbols if x not in CONSTRAINTS_RESERVED]
     symbols = [x.replace('(', '').replace(')', '') for x in symbols]
@@ -96,12 +109,9 @@ def from_constraint_to_formula(constraint):
     return "".join(list(symbols))
 
 def to_cnf(constraint):
-    #print("C: " + constraint)
     symbols = extract_symbols(constraint)
     formula_str = from_constraint_to_formula(constraint)
 
-    print("F: " + formula_str)
-    print("S: " + str(symbols))
     x = sympy.symbols(symbols)
     formula = sympy.to_cnf(formula_str)
 
@@ -112,7 +122,6 @@ def __imprimir_constraint(fm, c):
     for f in fm.get_features():
         if f.id in c:
             c = c.replace(f.id, f.name)
-    print("F: " + c)
 
 def constraints(fm):
     code = '<constraints>' + EOL
