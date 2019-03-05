@@ -11,7 +11,7 @@ Input:
     <fm-model.xml> is the feature model conformed to its metamodel.
 
 Output:
-    <fm-model-SPLOT.xmi> is the feature model conformed to the SPLOT format (SXFM).
+    <fm-model-SPLOT.xmi> is the feature model conformed to the S.P.L.O.T. format (SXFM).
 
 References:
     S.P.L.O.T.: http://www.splot-research.org/
