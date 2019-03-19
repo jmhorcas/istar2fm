@@ -40,6 +40,8 @@ class Metamodel():
         Args:
             entity (str): Name of the EClass in the metamodel.
 
+        Returns:
+            The Eclass of the entity.
         """
         return self.metamodel.getEClassifier(entity)
 

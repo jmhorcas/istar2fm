@@ -59,6 +59,29 @@ class IStarModel():
     def get_qualities(self, actor):
         return self.__get_intentional_elements(actor, 'Quality')
 
+    def get_intentional_elements(self, actor):
+        return self.get_goals(actor) + self.get_tasks(actor) + self.get_resources(actor) + self.get_qualities(actor)
+
+    def delete_intentional_element(self, actor, ie):
+        a = next((x for x in self.model.actors if x.id == actor.id), None)
+        if a is not None:
+            e = next((x for x in a.wants if x.id == ie.id), None)
+            if e is not None:
+                e.delete()
+                # parent = self.__get_refinements(actor, e)
+                # if parent is not None and len(parent.refines.to) == 0:
+                #     print("BOOOORRRAR" + str(parent.refines))
+                #     parent.refines.delete()
+
+    # def __get_refinements(self, actor, ie):
+    #     elements = (x for x in actor.wants if isinstance(x, self.metamodel.get_class('Goal')) or isinstance(x, self.metamodel.get_class('Task')))
+    #     for e in elements:
+    #         if e.refines is not None:
+    #             for r in e.refines.to:
+    #                 if r.id == ie.id:
+    #                     return e
+    #     return None
+
     def __get_intentional_elements(self, actor, class_type=None):
         intentional_elements = list(actor.wants)
         intentional_elements += [d.dependum for d in self.model.dependencies if d.dependee == actor]
@@ -164,6 +187,9 @@ class IStarModel():
     def add_participatesin_association(self, source, target):
         actor1 = self.__search_actor(source)
         actor2 = self.__search_actor(target)
+        actor1.participatesIn.append(actor2)
+
+    def add_participatesIn(self, actor1, actor2):
         actor1.participatesIn.append(actor2)
 
     def __search_intentional_element(self, id):

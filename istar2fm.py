@@ -346,6 +346,23 @@ def istar2fm(filename):
 
     fm = generate_feature_model(m)
     fm.save_model(filename[:-4] + "-FM.xmi")
+    return fm
+
+    #config = generate_configuration_model(m, fm)
+    #config.save_model(filename[:-4] + "-FMconfig.xmi")
+
+def agent2configFM(filename):
+    """It loads the i* agent model and generates a new configuration of the feature model by mapping the i* model to the FM concepts.
+
+    Args:
+        filename (str): Filename of the i* model (.xmi).
+
+    """
+    m = istarModel.IStarModel()
+    m.load_model(filename)
+
+    fm = generate_feature_model(m)
+    fm.save_model(filename[:-4] + "-FM.xmi")
 
     config = generate_configuration_model(m, fm)
     config.save_model(filename[:-4] + "-FMconfig.xmi")
