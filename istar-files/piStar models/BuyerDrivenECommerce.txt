@@ -1,0 +1,565 @@
+{
+  "actors": [
+    {
+      "id": "09c7354b-25e0-4b59-8fd1-38e5925c0ec5",
+      "text": "Customer As Buyer [Service]",
+      "type": "istar.Actor",
+      "x": 31,
+      "y": 56,
+      "nodes": [
+        {
+          "id": "41f6245a-fe65-4b02-9348-1d2a5aa49b61",
+          "text": "Low Price",
+          "type": "istar.Quality",
+          "x": 31,
+          "y": 193
+        },
+        {
+          "id": "fd9cb71e-7beb-43b4-8bb3-407b94432adb",
+          "text": "Flexibility [Purchasing]",
+          "type": "istar.Quality",
+          "x": 93,
+          "y": 117
+        },
+        {
+          "id": "cbb50b38-f83c-4871-b545-3bd72f9aac29",
+          "text": "Service Be Purchased [Service]",
+          "type": "istar.Goal",
+          "x": 203,
+          "y": 66
+        },
+        {
+          "id": "c9731a43-8765-450f-aec1-5450d733a923",
+          "text": "Purchase by Naming My Own Price [Service]",
+          "type": "istar.Task",
+          "x": 199,
+          "y": 159
+        },
+        {
+          "id": "ed027de5-ce0c-4544-bd6f-13da198dff2a",
+          "text": "Name a Price [Service]",
+          "type": "istar.Task",
+          "x": 115,
+          "y": 304
+        },
+        {
+          "id": "ced7a959-842e-40db-8214-90bebb537259",
+          "text": "Low Price Service Provider Be Found",
+          "type": "istar.Goal",
+          "x": 248,
+          "y": 293
+        }
+      ]
+    },
+    {
+      "id": "88bdaa42-a903-4744-a515-55ce9b016442",
+      "text": "Middleman As Seller [Service]",
+      "type": "istar.Actor",
+      "x": 628,
+      "y": 39,
+      "nodes": [
+        {
+          "id": "66b6daf0-c676-46c2-8552-dabd042c4163",
+          "text": "Profitability",
+          "type": "istar.Quality",
+          "x": 714,
+          "y": 62
+        },
+        {
+          "id": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c",
+          "text": "Customer Attraction [Service]",
+          "type": "istar.Quality",
+          "x": 749,
+          "y": 189
+        },
+        {
+          "id": "5536a6e3-7a22-4f93-afca-d944ad76e682",
+          "text": "Be Middleman [Service]",
+          "type": "istar.Goal",
+          "x": 868,
+          "y": 65
+        },
+        {
+          "id": "be1aa6fc-66dd-40f8-af03-a652352793e1",
+          "text": "Sell in Buyer Driven Style [Service]",
+          "type": "istar.Task",
+          "x": 860,
+          "y": 159
+        },
+        {
+          "id": "afbabeb8-bf7c-432f-bc12-3cf1d2142ba4",
+          "text": "Accept Purchase Request with Price",
+          "type": "istar.Task",
+          "x": 790,
+          "y": 332
+        },
+        {
+          "id": "ef62e89b-1bdd-49ed-959c-be64f45d673a",
+          "text": "Send Modified Request to Supplier",
+          "type": "istar.Task",
+          "x": 886,
+          "y": 278
+        },
+        {
+          "id": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a",
+          "text": "Get Price Agreement From Supplier",
+          "type": "istar.Task",
+          "x": 1004,
+          "y": 270
+        }
+      ]
+    },
+    {
+      "id": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381",
+      "text": "Supplier [Service]",
+      "type": "istar.Actor",
+      "x": 839,
+      "y": 563,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "4f0d2b0b-fe4c-42a3-adfa-6e57888016ce",
+      "text": "Loyalty",
+      "type": "istar.Quality",
+      "x": 442,
+      "y": 19,
+      "source": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c",
+      "target": "c9731a43-8765-450f-aec1-5450d733a923"
+    },
+    {
+      "id": "bdd82c46-be52-42af-9214-b41cc90fb0c3",
+      "text": "Pay for Purchasing [Service]",
+      "type": "istar.Task",
+      "x": 437,
+      "y": 98,
+      "source": "be1aa6fc-66dd-40f8-af03-a652352793e1",
+      "target": "c9731a43-8765-450f-aec1-5450d733a923"
+    },
+    {
+      "id": "d4beb38e-13e2-4e69-8540-d6ac5780ad36",
+      "text": "Name a Price [Service]",
+      "type": "istar.Task",
+      "x": 456,
+      "y": 212,
+      "source": "afbabeb8-bf7c-432f-bc12-3cf1d2142ba4",
+      "target": "ed027de5-ce0c-4544-bd6f-13da198dff2a"
+    },
+    {
+      "id": "07e4ea3e-bd43-49e3-b41c-38320942dcfb",
+      "text": "Low Price Service Provider Be Found",
+      "type": "istar.Goal",
+      "x": 477,
+      "y": 404,
+      "source": "ced7a959-842e-40db-8214-90bebb537259",
+      "target": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a"
+    },
+    {
+      "id": "26c69472-2055-4e2a-8b1c-e6899355e7f0",
+      "text": "Good Quality [Service]",
+      "type": "istar.Quality",
+      "x": 397,
+      "y": 534,
+      "source": "c9731a43-8765-450f-aec1-5450d733a923",
+      "target": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381"
+    },
+    {
+      "id": "a77ec4dd-ab7d-463c-82fd-928cf3dde4c6",
+      "text": "Acceptable Price [Service]",
+      "type": "istar.Quality",
+      "x": 172,
+      "y": 536,
+      "source": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381",
+      "target": "ed027de5-ce0c-4544-bd6f-13da198dff2a"
+    },
+    {
+      "id": "4cff68b2-92bf-4e1c-b802-44daaadfdadd",
+      "text": "Attract More Customers [Service]",
+      "type": "istar.Quality",
+      "x": 650,
+      "y": 475,
+      "source": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381",
+      "target": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c"
+    },
+    {
+      "id": "4407a764-eef0-409e-90da-668fa688b17f",
+      "text": "Agreement on Price [P]",
+      "type": "istar.Resource",
+      "x": 991,
+      "y": 458,
+      "source": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a",
+      "target": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381"
+    }
+  ],
+  "links": [
+    {
+      "id": "185cfa2a-4cf7-4dbc-bf12-672244b30587",
+      "type": "istar.DependencyLink",
+      "source": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c",
+      "target": "4f0d2b0b-fe4c-42a3-adfa-6e57888016ce"
+    },
+    {
+      "id": "56bffad3-9fbd-4d2d-b345-4cf64fc33ba3",
+      "type": "istar.DependencyLink",
+      "source": "4f0d2b0b-fe4c-42a3-adfa-6e57888016ce",
+      "target": "c9731a43-8765-450f-aec1-5450d733a923"
+    },
+    {
+      "id": "621f0ba6-4866-4cd4-9a98-67fc35b5c900",
+      "type": "istar.DependencyLink",
+      "source": "be1aa6fc-66dd-40f8-af03-a652352793e1",
+      "target": "bdd82c46-be52-42af-9214-b41cc90fb0c3"
+    },
+    {
+      "id": "83767d29-b880-4798-a26b-1ac721de0fe4",
+      "type": "istar.DependencyLink",
+      "source": "bdd82c46-be52-42af-9214-b41cc90fb0c3",
+      "target": "c9731a43-8765-450f-aec1-5450d733a923"
+    },
+    {
+      "id": "691341b2-f6b0-47cc-b917-ca63a94f71ce",
+      "type": "istar.DependencyLink",
+      "source": "afbabeb8-bf7c-432f-bc12-3cf1d2142ba4",
+      "target": "d4beb38e-13e2-4e69-8540-d6ac5780ad36"
+    },
+    {
+      "id": "5246fabf-6346-49b5-9527-47ca465a2a78",
+      "type": "istar.DependencyLink",
+      "source": "d4beb38e-13e2-4e69-8540-d6ac5780ad36",
+      "target": "ed027de5-ce0c-4544-bd6f-13da198dff2a"
+    },
+    {
+      "id": "79a96737-94d8-41c4-b6ee-a2a9149ea7fc",
+      "type": "istar.DependencyLink",
+      "source": "ced7a959-842e-40db-8214-90bebb537259",
+      "target": "07e4ea3e-bd43-49e3-b41c-38320942dcfb"
+    },
+    {
+      "id": "b2a0aa55-0992-496e-a885-e47176577051",
+      "type": "istar.DependencyLink",
+      "source": "07e4ea3e-bd43-49e3-b41c-38320942dcfb",
+      "target": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a"
+    },
+    {
+      "id": "6014af9d-67cc-4a21-8b16-29dd4b1b9056",
+      "type": "istar.DependencyLink",
+      "source": "c9731a43-8765-450f-aec1-5450d733a923",
+      "target": "26c69472-2055-4e2a-8b1c-e6899355e7f0"
+    },
+    {
+      "id": "d935203f-5c70-42b6-984e-956a90e824ca",
+      "type": "istar.DependencyLink",
+      "source": "26c69472-2055-4e2a-8b1c-e6899355e7f0",
+      "target": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381"
+    },
+    {
+      "id": "716edea0-163f-44ac-82c4-888e50ed6689",
+      "type": "istar.DependencyLink",
+      "source": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381",
+      "target": "a77ec4dd-ab7d-463c-82fd-928cf3dde4c6"
+    },
+    {
+      "id": "0523ad0d-4a93-48fd-91c7-6f75b791bc97",
+      "type": "istar.DependencyLink",
+      "source": "a77ec4dd-ab7d-463c-82fd-928cf3dde4c6",
+      "target": "ed027de5-ce0c-4544-bd6f-13da198dff2a"
+    },
+    {
+      "id": "dad42126-f22f-48c3-94f6-6caefc09031c",
+      "type": "istar.DependencyLink",
+      "source": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381",
+      "target": "4cff68b2-92bf-4e1c-b802-44daaadfdadd"
+    },
+    {
+      "id": "65f71592-5011-4e01-a0b4-1bd891e9f8fe",
+      "type": "istar.DependencyLink",
+      "source": "4cff68b2-92bf-4e1c-b802-44daaadfdadd",
+      "target": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c"
+    },
+    {
+      "id": "349d61e4-910c-4342-a559-8c755d170a6d",
+      "type": "istar.DependencyLink",
+      "source": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a",
+      "target": "4407a764-eef0-409e-90da-668fa688b17f"
+    },
+    {
+      "id": "c1395a7a-4083-4ed6-a671-b78c140805af",
+      "type": "istar.DependencyLink",
+      "source": "4407a764-eef0-409e-90da-668fa688b17f",
+      "target": "f9b4f95d-861a-4f71-b3d7-1e75c6dda381"
+    },
+    {
+      "id": "37f1ddb7-1d9a-498d-b0cc-30599b0c5c67",
+      "type": "istar.OrRefinementLink",
+      "source": "c9731a43-8765-450f-aec1-5450d733a923",
+      "target": "cbb50b38-f83c-4871-b545-3bd72f9aac29"
+    },
+    {
+      "id": "a520981c-81f8-43fd-a544-21de259e6985",
+      "type": "istar.AndRefinementLink",
+      "source": "ed027de5-ce0c-4544-bd6f-13da198dff2a",
+      "target": "c9731a43-8765-450f-aec1-5450d733a923"
+    },
+    {
+      "id": "2f0cec34-c8a0-4d46-b48f-40cf940f1303",
+      "type": "istar.OrRefinementLink",
+      "source": "be1aa6fc-66dd-40f8-af03-a652352793e1",
+      "target": "5536a6e3-7a22-4f93-afca-d944ad76e682"
+    },
+    {
+      "id": "5b75d249-1ba3-4310-b98b-05a8bad3501a",
+      "type": "istar.AndRefinementLink",
+      "source": "afbabeb8-bf7c-432f-bc12-3cf1d2142ba4",
+      "target": "be1aa6fc-66dd-40f8-af03-a652352793e1"
+    },
+    {
+      "id": "6f8631fa-2133-4013-bcec-e9385a97e9b7",
+      "type": "istar.AndRefinementLink",
+      "source": "ef62e89b-1bdd-49ed-959c-be64f45d673a",
+      "target": "be1aa6fc-66dd-40f8-af03-a652352793e1"
+    },
+    {
+      "id": "4f8ac9e0-93ac-4ee5-9152-619b80bc1575",
+      "type": "istar.AndRefinementLink",
+      "source": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a",
+      "target": "be1aa6fc-66dd-40f8-af03-a652352793e1"
+    },
+    {
+      "id": "cd2caab6-d016-4460-b704-9ffeb980867c",
+      "type": "istar.ContributionLink",
+      "source": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c",
+      "target": "66b6daf0-c676-46c2-8552-dabd042c4163",
+      "label": "help"
+    },
+    {
+      "id": "9c41ad44-6854-4a7b-a455-3b755fb84f1a",
+      "type": "istar.AndRefinementLink",
+      "source": "ced7a959-842e-40db-8214-90bebb537259",
+      "target": "c9731a43-8765-450f-aec1-5450d733a923"
+    },
+    {
+      "id": "20fef0fe-220f-4ffa-a30c-bfd91ecd30e2",
+      "type": "istar.ContributionLink",
+      "source": "ed027de5-ce0c-4544-bd6f-13da198dff2a",
+      "target": "41f6245a-fe65-4b02-9348-1d2a5aa49b61",
+      "label": "help"
+    },
+    {
+      "id": "7af57159-ca02-4775-a124-cc8e6b3eeb34",
+      "type": "istar.ContributionLink",
+      "source": "ced7a959-842e-40db-8214-90bebb537259",
+      "target": "fd9cb71e-7beb-43b4-8bb3-407b94432adb",
+      "label": "hurt"
+    },
+    {
+      "id": "51797445-28aa-45d8-a102-87d9f015e877",
+      "type": "istar.ContributionLink",
+      "source": "afbabeb8-bf7c-432f-bc12-3cf1d2142ba4",
+      "target": "66b6daf0-c676-46c2-8552-dabd042c4163",
+      "label": "hurt"
+    },
+    {
+      "id": "e0efa133-168e-4b70-9c13-27ce9a1bfece",
+      "type": "istar.ContributionLink",
+      "source": "afbabeb8-bf7c-432f-bc12-3cf1d2142ba4",
+      "target": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c",
+      "label": "help"
+    },
+    {
+      "id": "d943333f-4bd0-4db1-bff8-8e56edc8219c",
+      "type": "istar.ContributionLink",
+      "source": "eaf58ea7-2db6-4ab1-9ed4-6b457ac0661a",
+      "target": "b389b51d-d8ef-4b7a-9b7c-e48b9fdb528c",
+      "label": "help"
+    }
+  ],
+  "display": {
+    "185cfa2a-4cf7-4dbc-bf12-672244b30587": {
+      "vertices": [
+        {
+          "x": 640,
+          "y": 182
+        },
+        {
+          "x": 553,
+          "y": 67
+        }
+      ]
+    },
+    "56bffad3-9fbd-4d2d-b345-4cf64fc33ba3": {
+      "vertices": [
+        {
+          "x": 358,
+          "y": 75
+        }
+      ]
+    },
+    "621f0ba6-4866-4cd4-9a98-67fc35b5c900": {
+      "vertices": [
+        {
+          "x": 808,
+          "y": 132
+        }
+      ]
+    },
+    "83767d29-b880-4798-a26b-1ac721de0fe4": {
+      "vertices": [
+        {
+          "x": 361,
+          "y": 128
+        }
+      ]
+    },
+    "691341b2-f6b0-47cc-b917-ca63a94f71ce": {
+      "vertices": [
+        {
+          "x": 677,
+          "y": 273
+        }
+      ]
+    },
+    "5246fabf-6346-49b5-9527-47ca465a2a78": {
+      "vertices": [
+        {
+          "x": 304,
+          "y": 237
+        }
+      ]
+    },
+    "79a96737-94d8-41c4-b6ee-a2a9149ea7fc": {
+      "vertices": [
+        {
+          "x": 372,
+          "y": 370
+        }
+      ]
+    },
+    "b2a0aa55-0992-496e-a885-e47176577051": {
+      "vertices": [
+        {
+          "x": 947,
+          "y": 407
+        }
+      ]
+    },
+    "6014af9d-67cc-4a21-8b16-29dd4b1b9056": {
+      "vertices": [
+        {
+          "x": 229,
+          "y": 397
+        },
+        {
+          "x": 284,
+          "y": 497
+        }
+      ]
+    },
+    "d935203f-5c70-42b6-984e-956a90e824ca": {
+      "vertices": [
+        {
+          "x": 626,
+          "y": 570
+        }
+      ]
+    },
+    "716edea0-163f-44ac-82c4-888e50ed6689": {
+      "vertices": [
+        {
+          "x": 509,
+          "y": 595
+        }
+      ]
+    },
+    "0523ad0d-4a93-48fd-91c7-6f75b791bc97": {
+      "vertices": [
+        {
+          "x": 159,
+          "y": 444
+        }
+      ]
+    },
+    "dad42126-f22f-48c3-94f6-6caefc09031c": {
+      "vertices": [
+        {
+          "x": 721,
+          "y": 556
+        }
+      ]
+    },
+    "65f71592-5011-4e01-a0b4-1bd891e9f8fe": {
+      "vertices": [
+        {
+          "x": 746,
+          "y": 328
+        }
+      ]
+    },
+    "349d61e4-910c-4342-a559-8c755d170a6d": {
+      "vertices": [
+        {
+          "x": 1080,
+          "y": 372
+        }
+      ]
+    },
+    "c1395a7a-4083-4ed6-a671-b78c140805af": {
+      "vertices": [
+        {
+          "x": 960,
+          "y": 543
+        }
+      ]
+    },
+    "cd2caab6-d016-4460-b704-9ffeb980867c": {
+      "vertices": [
+        {
+          "x": 791,
+          "y": 131
+        }
+      ]
+    },
+    "20fef0fe-220f-4ffa-a30c-bfd91ecd30e2": {
+      "vertices": [
+        {
+          "x": 81,
+          "y": 275
+        }
+      ]
+    },
+    "7af57159-ca02-4775-a124-cc8e6b3eeb34": {
+      "vertices": [
+        {
+          "x": 142,
+          "y": 223
+        }
+      ]
+    },
+    "51797445-28aa-45d8-a102-87d9f015e877": {
+      "vertices": [
+        {
+          "x": 736,
+          "y": 239
+        }
+      ]
+    },
+    "d943333f-4bd0-4db1-bff8-8e56edc8219c": {
+      "vertices": [
+        {
+          "x": 981,
+          "y": 251
+        }
+      ]
+    },
+    "f9b4f95d-861a-4f71-b3d7-1e75c6dda381": {
+      "collapsed": true
+    }
+  },
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Wed, 27 Feb 2019 14:15:48 GMT",
+  "diagram": {
+    "width": 1200,
+    "height": 700
+  }
+}

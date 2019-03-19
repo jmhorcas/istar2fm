@@ -1,0 +1,801 @@
+{
+  "actors": [
+    {
+      "id": "8299e3aa-ac26-48eb-92d4-3247902f8285",
+      "text": "Appliance Basic Controller",
+      "type": "istar.Role",
+      "x": 613,
+      "y": 560,
+      "nodes": [
+        {
+          "id": "61b2f320-7cb6-4d2e-9ba2-f2fdf737f97e",
+          "text": "Monitor Power Consumption",
+          "type": "istar.Task",
+          "x": 797,
+          "y": 686
+        },
+        {
+          "id": "32097aa0-6e91-4d52-b1c5-838206d366f7",
+          "text": "Power Consumption",
+          "type": "istar.Resource",
+          "x": 921,
+          "y": 722
+        },
+        {
+          "id": "a8a60cea-5640-4f5c-8400-7da4577f40e3",
+          "text": "Check Appliance operation",
+          "type": "istar.Task",
+          "x": 1037,
+          "y": 648
+        },
+        {
+          "id": "b77a89ba-60e8-4fad-b164-ae29b2b49585",
+          "text": "Notify State",
+          "type": "istar.Task",
+          "x": 1164,
+          "y": 645
+        },
+        {
+          "id": "c08fb2a0-a28f-4078-97c6-48c59d359f4d",
+          "text": "Appliance State",
+          "type": "istar.Resource",
+          "x": 1076,
+          "y": 731
+        },
+        {
+          "id": "660af2e1-23ed-4ea1-9bdd-913a7d4577c7",
+          "text": "On demand",
+          "type": "istar.Task",
+          "x": 636,
+          "y": 633
+        },
+        {
+          "id": "7387de73-d8cc-40d8-b061-9801c28efb8b",
+          "text": "Programmed",
+          "type": "istar.Task",
+          "x": 754,
+          "y": 634
+        },
+        {
+          "id": "c88ad941-6bad-42cf-a159-c9da7c48d5a8",
+          "text": "Appliance Smart Control",
+          "type": "istar.Goal",
+          "x": 698,
+          "y": 571
+        },
+        {
+          "id": "e1c14597-4757-4419-ab21-ea876f3fb6f1",
+          "text": "Smart Power Monitoring",
+          "type": "istar.Goal",
+          "x": 889,
+          "y": 580
+        },
+        {
+          "id": "7faeed93-c26d-47fe-a5b9-7c730a8d6a7c",
+          "text": "Notify Power Consumption",
+          "type": "istar.Task",
+          "x": 918,
+          "y": 653
+        },
+        {
+          "id": "2234c068-f3c6-4790-85db-c8bdc7d2a5fc",
+          "text": "Smart Appliance Monitoring",
+          "type": "istar.Goal",
+          "x": 1105,
+          "y": 580
+        }
+      ]
+    },
+    {
+      "id": "0b8bc0fc-29bc-4692-87c2-f8eb2c65178c",
+      "text": "Green Manager",
+      "type": "istar.Actor",
+      "x": 261,
+      "y": 47,
+      "nodes": [
+        {
+          "id": "f9602f87-9edd-4498-bfdb-5f394978d50e",
+          "text": "Power Consumption Managed",
+          "type": "istar.Goal",
+          "x": 803,
+          "y": 47
+        },
+        {
+          "id": "ea947d7d-4cbf-476a-a5ce-1aa65d3d3cee",
+          "text": "Appliance operation coordinated",
+          "type": "istar.Goal",
+          "x": 1042,
+          "y": 113
+        },
+        {
+          "id": "590816a1-83f4-4d90-8dc8-e3220a07df0b",
+          "text": "Validate Schedule",
+          "type": "istar.Task",
+          "x": 1169,
+          "y": 140
+        },
+        {
+          "id": "f9dc1165-7e07-4fcd-a11f-e6c469160f65",
+          "text": "Adapt to user preferences",
+          "type": "istar.Goal",
+          "x": 558,
+          "y": 254
+        },
+        {
+          "id": "d404003e-13bc-4401-bb9f-83812e449f5c",
+          "text": "Adapt to user needs",
+          "type": "istar.Goal",
+          "x": 583,
+          "y": 307
+        },
+        {
+          "id": "7f3f9ee0-751b-4b86-82be-6ed3c5115d6d",
+          "text": "user comfort",
+          "type": "istar.Quality",
+          "x": 344,
+          "y": 251
+        },
+        {
+          "id": "7a6ade96-836f-40f1-a73d-4bbe03cb3904",
+          "text": "Energy Efficiency",
+          "type": "istar.Quality",
+          "x": 489,
+          "y": 149
+        },
+        {
+          "id": "45c76d0a-8531-4368-a482-07754663f4cf",
+          "text": "Sustainable Home",
+          "type": "istar.Quality",
+          "x": 364,
+          "y": 98
+        },
+        {
+          "id": "24e8fe07-57fe-4774-9e7f-bbe353bda95a",
+          "text": "Adapt to Energy tariff",
+          "type": "istar.Goal",
+          "x": 666,
+          "y": 265
+        },
+        {
+          "id": "0ff46abe-66ff-48a7-857e-fe2463cba0fa",
+          "text": "Adapted to Power limit",
+          "type": "istar.Goal",
+          "x": 705,
+          "y": 339
+        },
+        {
+          "id": "9f4c45c4-79a8-4700-a324-cc9bc41160ec",
+          "text": "Avoid Power Interruption",
+          "type": "istar.Quality",
+          "x": 364,
+          "y": 411
+        },
+        {
+          "id": "d1b9a56a-81eb-48ce-9532-8e4815f40aa1",
+          "text": "Collect Appliance Status",
+          "type": "istar.Task",
+          "x": 1076,
+          "y": 201
+        },
+        {
+          "id": "a2558ca3-54c4-48db-9a55-04966f9f5681",
+          "text": "Trade-off confort efficiency",
+          "type": "istar.Goal",
+          "x": 799,
+          "y": 295
+        },
+        {
+          "id": "1e355302-80b7-49eb-8383-30b09acde229",
+          "text": "Schedule Operation Remotely",
+          "type": "istar.Task",
+          "x": 1011,
+          "y": 253
+        },
+        {
+          "id": "1a526337-a1f1-4a6e-bb32-4e572ecbba62",
+          "text": "Appliance Data Collected",
+          "type": "istar.Goal",
+          "x": 568,
+          "y": 57
+        },
+        {
+          "id": "05083c15-e8a0-42d6-89f8-a0af50514d9b",
+          "text": "Scheduling Strategy Selected",
+          "type": "istar.Goal",
+          "x": 613,
+          "y": 127
+        },
+        {
+          "id": "44e8149f-aff7-4567-b573-bb8ae1957f5f",
+          "text": "Schedule Obtained",
+          "type": "istar.Goal",
+          "x": 861,
+          "y": 136
+        },
+        {
+          "id": "3c5cafdf-fa1d-4af8-80da-60042bc5dedf",
+          "text": "User confirms",
+          "type": "istar.Task",
+          "x": 739,
+          "y": 181
+        },
+        {
+          "id": "082825da-e65d-43cd-a278-de98a420191f",
+          "text": "System confirms",
+          "type": "istar.Task",
+          "x": 844,
+          "y": 243
+        },
+        {
+          "id": "84e97811-27be-4f71-8845-41c006c4cb39",
+          "text": "Operation Schedule Executed",
+          "type": "istar.Goal",
+          "x": 950,
+          "y": 67
+        },
+        {
+          "id": "ca5702c1-ef19-4db0-8b9d-46e2b5f1d713",
+          "text": "Appliance Operations Scheduled",
+          "type": "istar.Goal",
+          "x": 949,
+          "y": 172
+        },
+        {
+          "id": "03f6bbd4-a7b6-4ddb-85ab-4c016fb3f5e0",
+          "text": "Schedule Operation Manually",
+          "type": "istar.Task",
+          "x": 918,
+          "y": 295
+        },
+        {
+          "id": "1ffe2b00-7822-438b-aa08-ea9821da7d9c",
+          "text": "Operation Schedule Generated",
+          "type": "istar.Goal",
+          "x": 730,
+          "y": 118
+        },
+        {
+          "id": "4db137d8-f68d-4032-936b-721801a1e551",
+          "text": "Water Consumption Managed",
+          "type": "istar.Goal",
+          "x": 834,
+          "y": 362
+        }
+      ]
+    },
+    {
+      "id": "ee754cbb-167f-474f-a594-7c24881649b6",
+      "text": "Electric Company",
+      "type": "istar.Actor",
+      "x": 272,
+      "y": 560,
+      "nodes": []
+    },
+    {
+      "id": "dbc06bc4-6d48-45d7-a97d-a46db6a73dbb",
+      "text": "Siemens Connected Oven",
+      "type": "istar.Agent",
+      "x": 217,
+      "y": 646,
+      "nodes": [
+        {
+          "id": "8b18a96a-ab70-479d-96a6-e70eaaf2a106",
+          "text": "Appliance Programmed",
+          "type": "istar.Goal",
+          "x": 468,
+          "y": 658
+        },
+        {
+          "id": "4ec08f82-6ea3-4656-a2cf-4bfd811c3622",
+          "text": "Pick Recipe",
+          "type": "istar.Task",
+          "x": 217,
+          "y": 814
+        },
+        {
+          "id": "6be1b42b-3f3d-454a-84d3-40e7e00e97e4",
+          "text": "Set Timer",
+          "type": "istar.Task",
+          "x": 325,
+          "y": 811
+        },
+        {
+          "id": "4d9a891a-5636-4e90-8a64-7157158478c6",
+          "text": "Set Oven Program",
+          "type": "istar.Task",
+          "x": 334,
+          "y": 716
+        },
+        {
+          "id": "477d3458-6149-44a7-93df-d37396f12e51",
+          "text": "Control Oven Operation",
+          "type": "istar.Task",
+          "x": 586,
+          "y": 717
+        },
+        {
+          "id": "76b8e01d-33f6-4447-97c4-3d1586cc3035",
+          "text": "Turn On",
+          "type": "istar.Task",
+          "x": 552,
+          "y": 805
+        },
+        {
+          "id": "cd07e0e7-141f-4170-9e25-3b46e593537f",
+          "text": "Turn Off",
+          "type": "istar.Task",
+          "x": 659,
+          "y": 804
+        },
+        {
+          "id": "7c6fb14e-f276-43ed-a7d4-c16855c851b9",
+          "text": "Manual",
+          "type": "istar.Task",
+          "x": 438,
+          "y": 810
+        }
+      ]
+    },
+    {
+      "id": "87ed9007-65ac-46fb-bbb0-2f7bb756a178",
+      "text": "Samsung Smart Washer",
+      "type": "istar.Agent",
+      "x": 226,
+      "y": 758,
+      "nodes": []
+    },
+    {
+      "id": "2cbee5af-a5f9-4af5-a4ca-1f0471b6774e",
+      "text": "Washer Advanced Controller",
+      "type": "istar.Role",
+      "x": 347,
+      "y": 701,
+      "nodes": [
+        {
+          "id": "2e0fd6f1-f7e1-4ced-8ae3-d55551918662",
+          "text": "Smart Water Monitoring",
+          "type": "istar.Goal",
+          "x": 431,
+          "y": 728
+        },
+        {
+          "id": "5361e1cc-2efa-4060-9f0a-3eea0b8c5dc5",
+          "text": "Monitor Water Consumption",
+          "type": "istar.Task",
+          "x": 369,
+          "y": 787
+        },
+        {
+          "id": "992411e7-a29a-46f6-a629-855120dbb68f",
+          "text": "Notify Water Consumption",
+          "type": "istar.Task",
+          "x": 493,
+          "y": 785
+        }
+      ]
+    },
+    {
+      "id": "db47d0cc-6136-4020-8fcd-9f07ab3d7208",
+      "text": "Cooking Advanced Controller",
+      "type": "istar.Role",
+      "x": 473,
+      "y": 566,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "92c8ba73-be4f-4a62-8624-7f12fb046d0b",
+      "text": "Energy Tariff",
+      "type": "istar.Resource",
+      "x": 427,
+      "y": 500,
+      "source": "24e8fe07-57fe-4774-9e7f-bbe353bda95a",
+      "target": "ee754cbb-167f-474f-a594-7c24881649b6"
+    },
+    {
+      "id": "f6d03a16-bef1-4e77-9257-84dc9d64a3d0",
+      "text": "Power Limit Contracted",
+      "type": "istar.Resource",
+      "x": 216,
+      "y": 484,
+      "source": "9f4c45c4-79a8-4700-a324-cc9bc41160ec",
+      "target": "ee754cbb-167f-474f-a594-7c24881649b6"
+    },
+    {
+      "id": "9225ebdb-db51-449e-8d7a-b6095e0e1477",
+      "text": "Appliance Controlled",
+      "type": "istar.Goal",
+      "x": 758,
+      "y": 501,
+      "source": "1e355302-80b7-49eb-8383-30b09acde229",
+      "target": "c88ad941-6bad-42cf-a159-c9da7c48d5a8"
+    },
+    {
+      "id": "3e3e7c32-1447-49d4-a078-a6b7f17cf4c3",
+      "text": "Power Consumption Monitored",
+      "type": "istar.Goal",
+      "x": 916,
+      "y": 507,
+      "source": "d1b9a56a-81eb-48ce-9532-8e4815f40aa1",
+      "target": "e1c14597-4757-4419-ab21-ea876f3fb6f1"
+    }
+  ],
+  "links": [
+    {
+      "id": "59c6c6a5-0e7a-4677-9679-daeac0ab42eb",
+      "type": "istar.DependencyLink",
+      "source": "24e8fe07-57fe-4774-9e7f-bbe353bda95a",
+      "target": "92c8ba73-be4f-4a62-8624-7f12fb046d0b"
+    },
+    {
+      "id": "ad17fdd5-9012-4b06-a727-3dc9b34e1b76",
+      "type": "istar.DependencyLink",
+      "source": "92c8ba73-be4f-4a62-8624-7f12fb046d0b",
+      "target": "ee754cbb-167f-474f-a594-7c24881649b6"
+    },
+    {
+      "id": "62ac8d1e-ea72-4390-a845-76432579fd41",
+      "type": "istar.DependencyLink",
+      "source": "9f4c45c4-79a8-4700-a324-cc9bc41160ec",
+      "target": "f6d03a16-bef1-4e77-9257-84dc9d64a3d0"
+    },
+    {
+      "id": "6ff502d9-f318-4b69-b21c-eb06ee5b3885",
+      "type": "istar.DependencyLink",
+      "source": "f6d03a16-bef1-4e77-9257-84dc9d64a3d0",
+      "target": "ee754cbb-167f-474f-a594-7c24881649b6"
+    },
+    {
+      "id": "749c3253-55cb-4894-8124-695576cf460f",
+      "type": "istar.DependencyLink",
+      "source": "1e355302-80b7-49eb-8383-30b09acde229",
+      "target": "9225ebdb-db51-449e-8d7a-b6095e0e1477"
+    },
+    {
+      "id": "b045b2db-9961-41b3-8947-1d3afbeef09b",
+      "type": "istar.DependencyLink",
+      "source": "9225ebdb-db51-449e-8d7a-b6095e0e1477",
+      "target": "c88ad941-6bad-42cf-a159-c9da7c48d5a8"
+    },
+    {
+      "id": "0bc56737-8e7c-419f-90a4-2aeb5341f6e8",
+      "type": "istar.DependencyLink",
+      "source": "d1b9a56a-81eb-48ce-9532-8e4815f40aa1",
+      "target": "3e3e7c32-1447-49d4-a078-a6b7f17cf4c3"
+    },
+    {
+      "id": "48d91fb0-d063-47d7-9ca4-a0ed751b9088",
+      "type": "istar.DependencyLink",
+      "source": "3e3e7c32-1447-49d4-a078-a6b7f17cf4c3",
+      "target": "e1c14597-4757-4419-ab21-ea876f3fb6f1"
+    },
+    {
+      "id": "06f824a7-09bb-48ce-b402-8c683c6db542",
+      "type": "istar.NeededByLink",
+      "source": "32097aa0-6e91-4d52-b1c5-838206d366f7",
+      "target": "61b2f320-7cb6-4d2e-9ba2-f2fdf737f97e"
+    },
+    {
+      "id": "a8857ac7-b2d9-4e74-94a4-e21f948d325c",
+      "type": "istar.ContributionLink",
+      "source": "7a6ade96-836f-40f1-a73d-4bbe03cb3904",
+      "target": "45c76d0a-8531-4368-a482-07754663f4cf",
+      "label": "make"
+    },
+    {
+      "id": "1423da3a-0093-4d7b-b763-a4d964df35c6",
+      "type": "istar.ContributionLink",
+      "source": "0ff46abe-66ff-48a7-857e-fe2463cba0fa",
+      "target": "9f4c45c4-79a8-4700-a324-cc9bc41160ec",
+      "label": "make"
+    },
+    {
+      "id": "133eb7c4-cddc-4841-9bbd-81fef6909b16",
+      "type": "istar.ContributionLink",
+      "source": "24e8fe07-57fe-4774-9e7f-bbe353bda95a",
+      "target": "7a6ade96-836f-40f1-a73d-4bbe03cb3904",
+      "label": "help"
+    },
+    {
+      "id": "54f5b169-39f6-4370-be2f-b00e118b4285",
+      "type": "istar.NeededByLink",
+      "source": "c08fb2a0-a28f-4078-97c6-48c59d359f4d",
+      "target": "a8a60cea-5640-4f5c-8400-7da4577f40e3"
+    },
+    {
+      "id": "f77e28b6-1ee7-4a48-b91a-bdca652751bf",
+      "type": "istar.ContributionLink",
+      "source": "f9dc1165-7e07-4fcd-a11f-e6c469160f65",
+      "target": "7f3f9ee0-751b-4b86-82be-6ed3c5115d6d",
+      "label": "make"
+    },
+    {
+      "id": "5865d6f0-40db-43fb-98de-e37dd1a72209",
+      "type": "istar.ContributionLink",
+      "source": "d404003e-13bc-4401-bb9f-83812e449f5c",
+      "target": "7f3f9ee0-751b-4b86-82be-6ed3c5115d6d",
+      "label": "help"
+    },
+    {
+      "id": "5a0ce357-a676-46cb-816a-5947fda18482",
+      "type": "istar.OrRefinementLink",
+      "source": "4ec08f82-6ea3-4656-a2cf-4bfd811c3622",
+      "target": "4d9a891a-5636-4e90-8a64-7157158478c6"
+    },
+    {
+      "id": "4f42099c-8364-4b4e-8885-f84f87338037",
+      "type": "istar.OrRefinementLink",
+      "source": "6be1b42b-3f3d-454a-84d3-40e7e00e97e4",
+      "target": "4d9a891a-5636-4e90-8a64-7157158478c6"
+    },
+    {
+      "id": "6be850f7-b9ca-4b19-be62-39e94582c0a0",
+      "type": "istar.AndRefinementLink",
+      "source": "4d9a891a-5636-4e90-8a64-7157158478c6",
+      "target": "8b18a96a-ab70-479d-96a6-e70eaaf2a106"
+    },
+    {
+      "id": "3b14923b-0418-41f6-a141-d482e412d1ed",
+      "type": "istar.AndRefinementLink",
+      "source": "477d3458-6149-44a7-93df-d37396f12e51",
+      "target": "8b18a96a-ab70-479d-96a6-e70eaaf2a106"
+    },
+    {
+      "id": "cf0a398b-a064-4a3f-93da-752d98d523dc",
+      "type": "istar.ContributionLink",
+      "source": "9f4c45c4-79a8-4700-a324-cc9bc41160ec",
+      "target": "7f3f9ee0-751b-4b86-82be-6ed3c5115d6d",
+      "label": "make"
+    },
+    {
+      "id": "345cb52f-04de-4e49-b08d-971f16686356",
+      "type": "istar.OrRefinementLink",
+      "source": "7c6fb14e-f276-43ed-a7d4-c16855c851b9",
+      "target": "4d9a891a-5636-4e90-8a64-7157158478c6"
+    },
+    {
+      "id": "16f8b9f0-0e4e-4f0e-ab04-beb0327da638",
+      "type": "istar.OrRefinementLink",
+      "source": "f9dc1165-7e07-4fcd-a11f-e6c469160f65",
+      "target": "05083c15-e8a0-42d6-89f8-a0af50514d9b"
+    },
+    {
+      "id": "5baf2877-4d63-4d18-8242-aa37f618ffa4",
+      "type": "istar.OrRefinementLink",
+      "source": "d404003e-13bc-4401-bb9f-83812e449f5c",
+      "target": "05083c15-e8a0-42d6-89f8-a0af50514d9b"
+    },
+    {
+      "id": "7251d01e-3bb6-4130-845e-f8459fbd55b1",
+      "type": "istar.OrRefinementLink",
+      "source": "24e8fe07-57fe-4774-9e7f-bbe353bda95a",
+      "target": "05083c15-e8a0-42d6-89f8-a0af50514d9b"
+    },
+    {
+      "id": "06c172f6-8e39-4c47-811c-86db575d9493",
+      "type": "istar.OrRefinementLink",
+      "source": "a2558ca3-54c4-48db-9a55-04966f9f5681",
+      "target": "05083c15-e8a0-42d6-89f8-a0af50514d9b"
+    },
+    {
+      "id": "63a1e828-47c6-4288-87ab-a54686a44e5f",
+      "type": "istar.OrRefinementLink",
+      "source": "0ff46abe-66ff-48a7-857e-fe2463cba0fa",
+      "target": "05083c15-e8a0-42d6-89f8-a0af50514d9b"
+    },
+    {
+      "id": "efd15593-6f7f-4209-ae19-0069094cb609",
+      "type": "istar.OrRefinementLink",
+      "source": "3c5cafdf-fa1d-4af8-80da-60042bc5dedf",
+      "target": "44e8149f-aff7-4567-b573-bb8ae1957f5f"
+    },
+    {
+      "id": "96c1d753-ecbb-49da-a0e3-36e49a764470",
+      "type": "istar.OrRefinementLink",
+      "source": "082825da-e65d-43cd-a278-de98a420191f",
+      "target": "44e8149f-aff7-4567-b573-bb8ae1957f5f"
+    },
+    {
+      "id": "160b2c65-a797-406d-9df9-71a1eb788a9a",
+      "type": "istar.ContributionLink",
+      "source": "082825da-e65d-43cd-a278-de98a420191f",
+      "target": "7a6ade96-836f-40f1-a73d-4bbe03cb3904",
+      "label": "help"
+    },
+    {
+      "id": "23dd74c3-97ce-445d-bd76-8dc4ffd0ce93",
+      "type": "istar.ContributionLink",
+      "source": "3c5cafdf-fa1d-4af8-80da-60042bc5dedf",
+      "target": "7f3f9ee0-751b-4b86-82be-6ed3c5115d6d",
+      "label": "help"
+    },
+    {
+      "id": "92b2b8cf-6720-4f0a-b611-351d30dc1eed",
+      "type": "istar.AndRefinementLink",
+      "source": "84e97811-27be-4f71-8845-41c006c4cb39",
+      "target": "f9602f87-9edd-4498-bfdb-5f394978d50e"
+    },
+    {
+      "id": "438457de-5679-4be2-9dac-6c234f548014",
+      "type": "istar.AndRefinementLink",
+      "source": "ca5702c1-ef19-4db0-8b9d-46e2b5f1d713",
+      "target": "84e97811-27be-4f71-8845-41c006c4cb39"
+    },
+    {
+      "id": "ce54a072-15ef-4f2d-85a9-91562fceb49d",
+      "type": "istar.OrRefinementLink",
+      "source": "1e355302-80b7-49eb-8383-30b09acde229",
+      "target": "ca5702c1-ef19-4db0-8b9d-46e2b5f1d713"
+    },
+    {
+      "id": "27874714-ed3a-4760-bedf-159fd3684b93",
+      "type": "istar.OrRefinementLink",
+      "source": "03f6bbd4-a7b6-4ddb-85ab-4c016fb3f5e0",
+      "target": "ca5702c1-ef19-4db0-8b9d-46e2b5f1d713"
+    },
+    {
+      "id": "9388a4d0-dfec-465e-8b05-aec5252f3d05",
+      "type": "istar.AndRefinementLink",
+      "source": "1ffe2b00-7822-438b-aa08-ea9821da7d9c",
+      "target": "f9602f87-9edd-4498-bfdb-5f394978d50e"
+    },
+    {
+      "id": "b537f9d0-3d12-428f-901b-00e705a7e330",
+      "type": "istar.AndRefinementLink",
+      "source": "44e8149f-aff7-4567-b573-bb8ae1957f5f",
+      "target": "1ffe2b00-7822-438b-aa08-ea9821da7d9c"
+    },
+    {
+      "id": "66354662-1ede-4008-82ff-6eb5e82af24f",
+      "type": "istar.AndRefinementLink",
+      "source": "05083c15-e8a0-42d6-89f8-a0af50514d9b",
+      "target": "1ffe2b00-7822-438b-aa08-ea9821da7d9c"
+    },
+    {
+      "id": "c878aed7-b54f-479d-a303-f6096be0cd65",
+      "type": "istar.AndRefinementLink",
+      "source": "1a526337-a1f1-4a6e-bb32-4e572ecbba62",
+      "target": "1ffe2b00-7822-438b-aa08-ea9821da7d9c"
+    },
+    {
+      "id": "30d53ddd-9176-437e-99b8-d1d1eb76bc1f",
+      "type": "istar.AndRefinementLink",
+      "source": "ea947d7d-4cbf-476a-a5ce-1aa65d3d3cee",
+      "target": "84e97811-27be-4f71-8845-41c006c4cb39"
+    },
+    {
+      "id": "dcdf1e6f-8d49-4cb4-b6de-6d8f840b7fa7",
+      "type": "istar.AndRefinementLink",
+      "source": "d1b9a56a-81eb-48ce-9532-8e4815f40aa1",
+      "target": "ea947d7d-4cbf-476a-a5ce-1aa65d3d3cee"
+    },
+    {
+      "id": "5446aab0-7d9c-4dea-9212-04afdffab11a",
+      "type": "istar.AndRefinementLink",
+      "source": "590816a1-83f4-4d90-8dc8-e3220a07df0b",
+      "target": "ea947d7d-4cbf-476a-a5ce-1aa65d3d3cee"
+    },
+    {
+      "id": "d2306946-6d04-4844-b216-eeacefc396ee",
+      "type": "istar.AndRefinementLink",
+      "source": "76b8e01d-33f6-4447-97c4-3d1586cc3035",
+      "target": "477d3458-6149-44a7-93df-d37396f12e51"
+    },
+    {
+      "id": "d1780dba-9f5a-43ce-930f-7f5679109e28",
+      "type": "istar.AndRefinementLink",
+      "source": "cd07e0e7-141f-4170-9e25-3b46e593537f",
+      "target": "477d3458-6149-44a7-93df-d37396f12e51"
+    },
+    {
+      "id": "e126661f-bf30-425f-b0de-92fa194e85a4",
+      "type": "istar.IsALink",
+      "source": "2cbee5af-a5f9-4af5-a4ca-1f0471b6774e",
+      "target": "8299e3aa-ac26-48eb-92d4-3247902f8285"
+    },
+    {
+      "id": "1a49886e-86ce-4096-b967-7be7f645bb4a",
+      "type": "istar.IsALink",
+      "source": "db47d0cc-6136-4020-8fcd-9f07ab3d7208",
+      "target": "8299e3aa-ac26-48eb-92d4-3247902f8285"
+    },
+    {
+      "id": "40ed8813-7792-4797-8d3a-03f1fc46e7ea",
+      "type": "istar.OrRefinementLink",
+      "source": "660af2e1-23ed-4ea1-9bdd-913a7d4577c7",
+      "target": "c88ad941-6bad-42cf-a159-c9da7c48d5a8"
+    },
+    {
+      "id": "553c9b6c-c0e6-4a86-b1a8-9a96c1f302d0",
+      "type": "istar.OrRefinementLink",
+      "source": "7387de73-d8cc-40d8-b061-9801c28efb8b",
+      "target": "c88ad941-6bad-42cf-a159-c9da7c48d5a8"
+    },
+    {
+      "id": "2f3e60c6-a9c3-49ab-8cbf-e388ec3c582e",
+      "type": "istar.AndRefinementLink",
+      "source": "61b2f320-7cb6-4d2e-9ba2-f2fdf737f97e",
+      "target": "e1c14597-4757-4419-ab21-ea876f3fb6f1"
+    },
+    {
+      "id": "c681415a-eb8a-4eb1-8b04-f5ae4a0e2e21",
+      "type": "istar.ParticipatesInLink",
+      "source": "dbc06bc4-6d48-45d7-a97d-a46db6a73dbb",
+      "target": "db47d0cc-6136-4020-8fcd-9f07ab3d7208"
+    },
+    {
+      "id": "f9686983-69b5-4010-b1ad-a882054d72e3",
+      "type": "istar.ParticipatesInLink",
+      "source": "87ed9007-65ac-46fb-bbb0-2f7bb756a178",
+      "target": "2cbee5af-a5f9-4af5-a4ca-1f0471b6774e"
+    },
+    {
+      "id": "dd47cb88-72ba-4735-8b37-a31adfbabb60",
+      "type": "istar.AndRefinementLink",
+      "source": "7faeed93-c26d-47fe-a5b9-7c730a8d6a7c",
+      "target": "e1c14597-4757-4419-ab21-ea876f3fb6f1"
+    },
+    {
+      "id": "394f1ef4-783d-418e-820a-7cab653367c9",
+      "type": "istar.AndRefinementLink",
+      "source": "5361e1cc-2efa-4060-9f0a-3eea0b8c5dc5",
+      "target": "2e0fd6f1-f7e1-4ced-8ae3-d55551918662"
+    },
+    {
+      "id": "333557cd-67b9-4e98-beed-405cc16054a4",
+      "type": "istar.AndRefinementLink",
+      "source": "992411e7-a29a-46f6-a629-855120dbb68f",
+      "target": "2e0fd6f1-f7e1-4ced-8ae3-d55551918662"
+    },
+    {
+      "id": "f5faa27e-f53a-416c-80e2-384e63ee6738",
+      "type": "istar.AndRefinementLink",
+      "source": "a8a60cea-5640-4f5c-8400-7da4577f40e3",
+      "target": "2234c068-f3c6-4790-85db-c8bdc7d2a5fc"
+    },
+    {
+      "id": "907711f6-41e2-4531-a59b-da0af1c5a4ec",
+      "type": "istar.AndRefinementLink",
+      "source": "b77a89ba-60e8-4fad-b164-ae29b2b49585",
+      "target": "2234c068-f3c6-4790-85db-c8bdc7d2a5fc"
+    }
+  ],
+  "display": {
+    "133eb7c4-cddc-4841-9bbd-81fef6909b16": {
+      "vertices": [
+        {
+          "x": 282,
+          "y": 290
+        }
+      ]
+    },
+    "63a1e828-47c6-4288-87ab-a54686a44e5f": {
+      "vertices": [
+        {
+          "x": 770,
+          "y": 263
+        }
+      ]
+    },
+    "ee754cbb-167f-474f-a594-7c24881649b6": {
+      "collapsed": true
+    },
+    "dbc06bc4-6d48-45d7-a97d-a46db6a73dbb": {
+      "collapsed": true
+    },
+    "87ed9007-65ac-46fb-bbb0-2f7bb756a178": {
+      "collapsed": true
+    },
+    "db47d0cc-6136-4020-8fcd-9f07ab3d7208": {
+      "collapsed": true
+    }
+  },
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 14 Mar 2019 11:55:34 GMT",
+  "diagram": {
+    "width": 1679,
+    "height": 1500
+  }
+}
