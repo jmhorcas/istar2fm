@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<featureModelMetamodel:FeatureModel xmlns:featureModelMetamodel="http://caosd.lcc.uma.es/featureModelMetamodel" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" features="MyFeatureRoot _830B5Ef80F414A17Ba2ABa4A8F4E799B StudentGoals StudentPlans StudentContext StudentQAs _8F5B597510Bc44B592B2C53E2394B2C9 _D7350E311D2946B0Bce5E191189720Cd _C3F53C8DB4214C608Dbf03B07978295B _4E767Af4Fd1E4E3E8A823740521E576A _16D9B9BfFdef48328F7D8Dcb42513371 _D8991D04C2A645F0A3Ed3Ebed2A2D86D _F34B98B96Cba44108A49451E00049E43 _94B43D28480C4A2292EdC8Ba69A1D111 _89643E71E10F44749Ac63Ddd413Bfda8 _B73684Df423847D2Ae5AE9D88Df9559A _191249F9D24947DbB5F2C09449307Eb4 _9Bb7E9273Dee44858Fda01954D324C88 _37B28C3F75544C6291Cd44Cac0873977 _102Cbb1C56004058Bed9Cc9E1Ad1D9E9 _F2Ad4E2A1B6D44Ce94D728Aee4E08D3D _4934265EAbf64Fe191C938C2A6Aadcb0 _11D870D2798745C9A36A7B177219Ae50 _1747E206Fa354229B4Be67B3893E84D1 _49Da8A06B2434C6E9C50Dded496Bec94 _13Efea0396A04162B89EF46Efc9A96C4 _59D154E28Af748Da9F55195Ffebab399 _8A867E085A704816Ab021D84Cf1B79Dd _0055D468109743B295Bf1781730B1985 _0Afa08E3230640C89D402C144B748664 _C8E311Fd2A1A40F1B5E5C62Eb3E3A397 _685E45899717487FAa942Eab2F7C5B46 _C7B6F3108Fab41818323A4190Cd35C26 PhdStudentGoals PhdStudentPlans PhdStudentContext PhdStudentQAs _3C57900FBa6A4277Ba86A688B23628A8 TravelAgencyGoals TravelAgencyPlans TravelAgencyContext TravelAgencyQAs _Dc25D9F67Aea46Fd8B591E317F5017F1 _9544119CDd79417E8A196F67455D784B _F26Ec7D2313342B0B54C2B4695E9Ee1B" xmi:version="2.0">
+  <constraints language="First-order logic" id="__C3F53C8DB4214C608Dbf03B07978295B implies (_191249F9D24947DbB5F2C09449307Eb4 or _9Bb7E9273Dee44858Fda01954D324C88)" code="_C3F53C8DB4214C608Dbf03B07978295B implies (_191249F9D24947DbB5F2C09449307Eb4 or _9Bb7E9273Dee44858Fda01954D324C88)"/>
+  <constraints language="First-order logic" id="__191249F9D24947DbB5F2C09449307Eb4 implies not (_9Bb7E9273Dee44858Fda01954D324C88)" code="_191249F9D24947DbB5F2C09449307Eb4 implies not (_9Bb7E9273Dee44858Fda01954D324C88)"/>
+  <constraints language="First-order logic" id="__9Bb7E9273Dee44858Fda01954D324C88 implies not (_191249F9D24947DbB5F2C09449307Eb4)" code="_9Bb7E9273Dee44858Fda01954D324C88 implies not (_191249F9D24947DbB5F2C09449307Eb4)"/>
+  <constraints language="First-order logic" id="__4E767Af4Fd1E4E3E8A823740521E576A implies (_37B28C3F75544C6291Cd44Cac0873977 or _102Cbb1C56004058Bed9Cc9E1Ad1D9E9)" code="_4E767Af4Fd1E4E3E8A823740521E576A implies (_37B28C3F75544C6291Cd44Cac0873977 or _102Cbb1C56004058Bed9Cc9E1Ad1D9E9)"/>
+  <constraints language="First-order logic" id="__37B28C3F75544C6291Cd44Cac0873977 implies not (_102Cbb1C56004058Bed9Cc9E1Ad1D9E9)" code="_37B28C3F75544C6291Cd44Cac0873977 implies not (_102Cbb1C56004058Bed9Cc9E1Ad1D9E9)"/>
+  <constraints language="First-order logic" id="__102Cbb1C56004058Bed9Cc9E1Ad1D9E9 implies not (_37B28C3F75544C6291Cd44Cac0873977)" code="_102Cbb1C56004058Bed9Cc9E1Ad1D9E9 implies not (_37B28C3F75544C6291Cd44Cac0873977)"/>
+  <constraints language="First-order logic" id="__F34B98B96Cba44108A49451E00049E43 implies (_4934265EAbf64Fe191C938C2A6Aadcb0 or _11D870D2798745C9A36A7B177219Ae50)" code="_F34B98B96Cba44108A49451E00049E43 implies (_4934265EAbf64Fe191C938C2A6Aadcb0 or _11D870D2798745C9A36A7B177219Ae50)"/>
+  <constraints language="First-order logic" id="__4934265EAbf64Fe191C938C2A6Aadcb0 implies not (_11D870D2798745C9A36A7B177219Ae50)" code="_4934265EAbf64Fe191C938C2A6Aadcb0 implies not (_11D870D2798745C9A36A7B177219Ae50)"/>
+  <constraints language="First-order logic" id="__11D870D2798745C9A36A7B177219Ae50 implies not (_4934265EAbf64Fe191C938C2A6Aadcb0)" code="_11D870D2798745C9A36A7B177219Ae50 implies not (_4934265EAbf64Fe191C938C2A6Aadcb0)"/>
+  <constraints language="First-order logic" id="__B73684Df423847D2Ae5AE9D88Df9559A implies (_13Efea0396A04162B89EF46Efc9A96C4 or _59D154E28Af748Da9F55195Ffebab399)" code="_B73684Df423847D2Ae5AE9D88Df9559A implies (_13Efea0396A04162B89EF46Efc9A96C4 or _59D154E28Af748Da9F55195Ffebab399)"/>
+  <constraints language="First-order logic" id="__13Efea0396A04162B89EF46Efc9A96C4 implies not (_59D154E28Af748Da9F55195Ffebab399)" code="_13Efea0396A04162B89EF46Efc9A96C4 implies not (_59D154E28Af748Da9F55195Ffebab399)"/>
+  <constraints language="First-order logic" id="__59D154E28Af748Da9F55195Ffebab399 implies not (_13Efea0396A04162B89EF46Efc9A96C4)" code="_59D154E28Af748Da9F55195Ffebab399 implies not (_13Efea0396A04162B89EF46Efc9A96C4)"/>
+  <constraints language="First-order logic" id="__16D9B9BfFdef48328F7D8Dcb42513371 implies (_D8991D04C2A645F0A3Ed3Ebed2A2D86D or _F2Ad4E2A1B6D44Ce94D728Aee4E08D3D)" code="_16D9B9BfFdef48328F7D8Dcb42513371 implies (_D8991D04C2A645F0A3Ed3Ebed2A2D86D or _F2Ad4E2A1B6D44Ce94D728Aee4E08D3D)"/>
+  <constraints language="First-order logic" id="__D8991D04C2A645F0A3Ed3Ebed2A2D86D implies not (_F2Ad4E2A1B6D44Ce94D728Aee4E08D3D)" code="_D8991D04C2A645F0A3Ed3Ebed2A2D86D implies not (_F2Ad4E2A1B6D44Ce94D728Aee4E08D3D)"/>
+  <constraints language="First-order logic" id="__F2Ad4E2A1B6D44Ce94D728Aee4E08D3D implies not (_D8991D04C2A645F0A3Ed3Ebed2A2D86D)" code="_F2Ad4E2A1B6D44Ce94D728Aee4E08D3D implies not (_D8991D04C2A645F0A3Ed3Ebed2A2D86D)"/>
+  <constraints language="First-order logic" id="__49Da8A06B2434C6E9C50Dded496Bec94 implies _8A867E085A704816Ab021D84Cf1B79Dd" code="_49Da8A06B2434C6E9C50Dded496Bec94 implies _8A867E085A704816Ab021D84Cf1B79Dd"/>
+  <constraints language="First-order logic" id="_191249F9D24947Dbb5F2C09449307Eb4ImpliesNot_0055D468109743B295Bf1781730B1985" code="_191249F9D24947DbB5F2C09449307Eb4 implies not _0055D468109743B295Bf1781730B1985"/>
+  <constraints language="First-order logic" id="_9Bb7E9273Dee44858Fda01954D324C88Implies_0055D468109743B295Bf1781730B1985" code="_9Bb7E9273Dee44858Fda01954D324C88 implies _0055D468109743B295Bf1781730B1985"/>
+  <constraints language="First-order logic" id="_37B28C3F75544C6291Cd44Cac0873977Implies_0Afa08E3230640C89D402C144B748664" code="_37B28C3F75544C6291Cd44Cac0873977 implies _0Afa08E3230640C89D402C144B748664"/>
+  <constraints language="First-order logic" id="_102Cbb1C56004058Bed9Cc9E1Ad1D9E9ImpliesNot_0Afa08E3230640C89D402C144B748664" code="_102Cbb1C56004058Bed9Cc9E1Ad1D9E9 implies not _0Afa08E3230640C89D402C144B748664"/>
+  <constraints language="First-order logic" id="_F2Ad4E2A1B6D44Ce94D728Aee4E08D3DImplies_685E45899717487Faa942Eab2F7C5B46" code="_F2Ad4E2A1B6D44Ce94D728Aee4E08D3D implies _685E45899717487FAa942Eab2F7C5B46"/>
+  <constraints language="First-order logic" id="_4934265Eabf64Fe191C938C2A6Aadcb0Implies_685E45899717487Faa942Eab2F7C5B46" code="_4934265EAbf64Fe191C938C2A6Aadcb0 implies _685E45899717487FAa942Eab2F7C5B46"/>
+  <constraints language="First-order logic" id="_11D870D2798745C9A36A7B177219Ae50Implies_0Afa08E3230640C89D402C144B748664" code="_11D870D2798745C9A36A7B177219Ae50 implies _0Afa08E3230640C89D402C144B748664"/>
+  <constraints language="First-order logic" id="_11D870D2798745C9A36A7B177219Ae50ImpliesNot_685E45899717487Faa942Eab2F7C5B46" code="_11D870D2798745C9A36A7B177219Ae50 implies not _685E45899717487FAa942Eab2F7C5B46"/>
+  <constraints language="First-order logic" id="_0Afa08E3230640C89D402C144B748664Implies_C8E311Fd2A1A40F1B5E5C62Eb3E3A397" code="_0Afa08E3230640C89D402C144B748664 implies _C8E311Fd2A1A40F1B5E5C62Eb3E3A397"/>
+  <constraints language="First-order logic" id="_685E45899717487Faa942Eab2F7C5B46Implies_C8E311Fd2A1A40F1B5E5C62Eb3E3A397" code="_685E45899717487FAa942Eab2F7C5B46 implies _C8E311Fd2A1A40F1B5E5C62Eb3E3A397"/>
+  <root name="MyFeatureRoot" id="MyFeatureRoot" variabilityType="mandatory">
+    <groupMultiplicity lower="1" features="_830B5Ef80F414A17Ba2ABa4A8F4E799B _C7B6F3108Fab41818323A4190Cd35C26 _3C57900FBa6A4277Ba86A688B23628A8" upper="-1"/>
+    <children xsi:type="featureModelMetamodel:ClonableFeature" name="Student" id="_830B5Ef80F414A17Ba2ABa4A8F4E799B" parent="MyFeatureRoot" variabilityType="or">
+      <instanceMultiplicity lower="1" upper="-1"/>
+      <children parent="_830B5Ef80F414A17Ba2ABa4A8F4E799B" id="StudentGoals" name="StudentGoals" variabilityType="mandatory">
+        <children parent="StudentGoals" id="_8F5B597510Bc44B592B2C53E2394B2C9" name="TravelOrganized" variabilityType="optional">
+          <children parent="_8F5B597510Bc44B592B2C53E2394B2C9" id="_D7350E311D2946B0Bce5E191189720Cd" name="AuthorizationObtained" variabilityType="mandatory">
+            <children parent="_D7350E311D2946B0Bce5E191189720Cd" id="_C3F53C8DB4214C608Dbf03B07978295B" name="RequestPrepared" variabilityType="mandatory"/>
+            <children parent="_D7350E311D2946B0Bce5E191189720Cd" id="_4E767Af4Fd1E4E3E8A823740521E576A" name="AuthorizationSigned" variabilityType="mandatory"/>
+          </children>
+          <children parent="_8F5B597510Bc44B592B2C53E2394B2C9" id="_16D9B9BfFdef48328F7D8Dcb42513371" name="TripBooked" variabilityType="mandatory">
+            <children parent="_16D9B9BfFdef48328F7D8Dcb42513371" id="_D8991D04C2A645F0A3Ed3Ebed2A2D86D" name="TripPartsBooked" variabilityType="optional">
+              <children parent="_D8991D04C2A645F0A3Ed3Ebed2A2D86D" id="_F34B98B96Cba44108A49451E00049E43" name="TicketsBooked" variabilityType="mandatory"/>
+              <children name="AccommodatiOnBooked" id="_94B43D28480C4A2292EdC8Ba69A1D111" parent="_D8991D04C2A645F0A3Ed3Ebed2A2D86D" variabilityType="mandatory">
+                <groupMultiplicity lower="1" features="_89643E71E10F44749Ac63Ddd413Bfda8 _B73684Df423847D2Ae5AE9D88Df9559A" upper="1"/>
+                <children parent="_94B43D28480C4A2292EdC8Ba69A1D111" id="_89643E71E10F44749Ac63Ddd413Bfda8" name="ConferenceHotelBooked" variabilityType="alternative"/>
+                <children parent="_94B43D28480C4A2292EdC8Ba69A1D111" id="_B73684Df423847D2Ae5AE9D88Df9559A" name="BudgetHotelBooked" variabilityType="alternative"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children parent="_830B5Ef80F414A17Ba2ABa4A8F4E799B" id="StudentPlans" name="StudentPlans" variabilityType="optional">
+        <children parent="StudentPlans" id="_191249F9D24947DbB5F2C09449307Eb4" name="FillInPaperForm" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_9Bb7E9273Dee44858Fda01954D324C88" name="FillInOnlineForm" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_37B28C3F75544C6291Cd44Cac0873977" name="SupervisorAuthorizes" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_102Cbb1C56004058Bed9Cc9E1Ad1D9E9" name="HeadOfDeptAuthorizes" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_F2Ad4E2A1B6D44Ce94D728Aee4E08D3D" name="BundleBooked" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_4934265EAbf64Fe191C938C2A6Aadcb0" name="AgencyBuysTickets" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_11D870D2798745C9A36A7B177219Ae50" name="SelfBookTickets" variabilityType="optional">
+          <children parent="_11D870D2798745C9A36A7B177219Ae50" id="_1747E206Fa354229B4Be67B3893E84D1" name="BuyTickets" variabilityType="mandatory"/>
+          <children parent="_11D870D2798745C9A36A7B177219Ae50" id="_49Da8A06B2434C6E9C50Dded496Bec94" name="PayForTickets" variabilityType="mandatory"/>
+        </children>
+        <children parent="StudentPlans" id="_13Efea0396A04162B89EF46Efc9A96C4" name="BuyThroughBookingCom" variabilityType="optional"/>
+        <children parent="StudentPlans" id="_59D154E28Af748Da9F55195Ffebab399" name="BuyThroughHotelWebsite" variabilityType="optional"/>
+      </children>
+      <children parent="_830B5Ef80F414A17Ba2ABa4A8F4E799B" id="StudentContext" name="StudentContext" variabilityType="optional">
+        <children parent="StudentContext" id="_8A867E085A704816Ab021D84Cf1B79Dd" name="CreditCard" variabilityType="optional"/>
+      </children>
+      <children parent="_830B5Ef80F414A17Ba2ABa4A8F4E799B" id="StudentQAs" name="StudentQAs" variabilityType="optional">
+        <children parent="StudentQAs" id="_0055D468109743B295Bf1781730B1985" name="NoErrors" variabilityType="optional"/>
+        <children parent="StudentQAs" id="_0Afa08E3230640C89D402C144B748664" name="QuickBooking" variabilityType="optional"/>
+        <children parent="StudentQAs" id="_C8E311Fd2A1A40F1B5E5C62Eb3E3A397" name="Comfort" variabilityType="optional"/>
+        <children parent="StudentQAs" id="_685E45899717487FAa942Eab2F7C5B46" name="MinimalOwnPayments" variabilityType="optional"/>
+      </children>
+    </children>
+    <children xsi:type="featureModelMetamodel:ClonableFeature" name="PhdStudent" id="_C7B6F3108Fab41818323A4190Cd35C26" parent="MyFeatureRoot" variabilityType="or">
+      <instanceMultiplicity lower="1" upper="-1"/>
+      <children parent="_C7B6F3108Fab41818323A4190Cd35C26" id="PhdStudentGoals" name="PhdStudentGoals" variabilityType="mandatory"/>
+      <children parent="_C7B6F3108Fab41818323A4190Cd35C26" id="PhdStudentPlans" name="PhdStudentPlans" variabilityType="optional"/>
+      <children parent="_C7B6F3108Fab41818323A4190Cd35C26" id="PhdStudentContext" name="PhdStudentContext" variabilityType="optional"/>
+      <children parent="_C7B6F3108Fab41818323A4190Cd35C26" id="PhdStudentQAs" name="PhdStudentQAs" variabilityType="optional"/>
+    </children>
+    <children parent="MyFeatureRoot" id="_3C57900FBa6A4277Ba86A688B23628A8" name="TravelAgency" variabilityType="or">
+      <children parent="_3C57900FBa6A4277Ba86A688B23628A8" id="TravelAgencyGoals" name="TravelAgencyGoals" variabilityType="mandatory">
+        <children parent="TravelAgencyGoals" id="_Dc25D9F67Aea46Fd8B591E317F5017F1" name="TripBundleBooked" variabilityType="optional"/>
+      </children>
+      <children parent="_3C57900FBa6A4277Ba86A688B23628A8" id="TravelAgencyPlans" name="TravelAgencyPlans" variabilityType="optional">
+        <children parent="TravelAgencyPlans" id="_9544119CDd79417E8A196F67455D784B" name="BookBundleViaExpedia" variabilityType="optional"/>
+        <children parent="TravelAgencyPlans" id="_F26Ec7D2313342B0B54C2B4695E9Ee1B" name="BuyFlightTickets" variabilityType="optional"/>
+      </children>
+      <children parent="_3C57900FBa6A4277Ba86A688B23628A8" id="TravelAgencyContext" name="TravelAgencyContext" variabilityType="optional"/>
+      <children parent="_3C57900FBa6A4277Ba86A688B23628A8" id="TravelAgencyQAs" name="TravelAgencyQAs" variabilityType="optional"/>
+    </children>
+  </root>
+</featureModelMetamodel:FeatureModel>

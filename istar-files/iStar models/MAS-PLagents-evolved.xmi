@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iStarMetamodel:IStarModel xmlns:iStarMetamodel="http://caosd.lcc.uma.es/iStarMetamodel" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <dependencies dependerElmt="24e8fe07-57fe-4774-9e7f-bbe353bda95a" dependee="ee754cbb-167f-474f-a594-7c24881649b6" name="Energy Tariff" depender="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" id="92c8ba73-be4f-4a62-8624-7f12fb046d0b">
+    <dependum xsi:type="iStarMetamodel:Resource" name="Energy Tariff" id="92c8ba73-be4f-4a62-8624-7f12fb046d0b"/>
+  </dependencies>
+  <dependencies dependerElmt="9f4c45c4-79a8-4700-a324-cc9bc41160ec" dependee="ee754cbb-167f-474f-a594-7c24881649b6" name="Power Limit Contracted" depender="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" id="f6d03a16-bef1-4e77-9257-84dc9d64a3d0">
+    <dependum xsi:type="iStarMetamodel:Resource" name="Power Limit Contracted" id="f6d03a16-bef1-4e77-9257-84dc9d64a3d0"/>
+  </dependencies>
+  <dependencies dependerElmt="1e355302-80b7-49eb-8383-30b09acde229" dependee="8299e3aa-ac26-48eb-92d4-3247902f8285" name="Appliance Controlled" depender="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" id="9225ebdb-db51-449e-8d7a-b6095e0e1477" dependeeElmt="c88ad941-6bad-42cf-a159-c9da7c48d5a8">
+    <dependum xsi:type="iStarMetamodel:Goal" name="Appliance Controlled" id="9225ebdb-db51-449e-8d7a-b6095e0e1477"/>
+  </dependencies>
+  <dependencies dependerElmt="d1b9a56a-81eb-48ce-9532-8e4815f40aa1" dependee="8299e3aa-ac26-48eb-92d4-3247902f8285" name="Power Consumption Monitored" depender="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" id="3e3e7c32-1447-49d4-a078-a6b7f17cf4c3" dependeeElmt="e1c14597-4757-4419-ab21-ea876f3fb6f1">
+    <dependum xsi:type="iStarMetamodel:Goal" name="Power Consumption Monitored" id="3e3e7c32-1447-49d4-a078-a6b7f17cf4c3"/>
+  </dependencies>
+  <dependencies dependerElmt="ee262ff8-671c-476e-91c7-32ab9a58c619" dependee="8299e3aa-ac26-48eb-92d4-3247902f8285" name="Appliance Status Checked" depender="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" id="09efb19f-3549-4ca8-85c2-36c6ca7abc65" dependeeElmt="2234c068-f3c6-4790-85db-c8bdc7d2a5fc">
+    <dependum xsi:type="iStarMetamodel:Goal" name="Appliance Status Checked" id="09efb19f-3549-4ca8-85c2-36c6ca7abc65"/>
+  </dependencies>
+  <dependencies dependerElmt="574d7dc9-e9ca-4bbd-ba15-e2e4256acb73" dependee="2cbee5af-a5f9-4af5-a4ca-1f0471b6774e" name="Water Consumption Monitoring" depender="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" id="041defd0-1f51-4ab5-8754-faed9594ba08" dependeeElmt="2e0fd6f1-f7e1-4ced-8ae3-d55551918662">
+    <dependum xsi:type="iStarMetamodel:Goal" name="Water Consumption Monitoring" id="041defd0-1f51-4ab5-8754-faed9594ba08"/>
+  </dependencies>
+  <actors xsi:type="iStarMetamodel:Role" id="8299e3aa-ac26-48eb-92d4-3247902f8285" name="Appliance Basic Controller">
+    <wants xsi:type="iStarMetamodel:Task" name="Monitor Power Consumption" id="61b2f320-7cb6-4d2e-9ba2-f2fdf737f97e"/>
+    <wants xsi:type="iStarMetamodel:Resource" neededBy="61b2f320-7cb6-4d2e-9ba2-f2fdf737f97e" name="Power Consumption" id="32097aa0-6e91-4d52-b1c5-838206d366f7"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Check Appliance operation" id="a8a60cea-5640-4f5c-8400-7da4577f40e3"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Notify State" id="b77a89ba-60e8-4fad-b164-ae29b2b49585"/>
+    <wants xsi:type="iStarMetamodel:Resource" neededBy="a8a60cea-5640-4f5c-8400-7da4577f40e3" name="Appliance State" id="c08fb2a0-a28f-4078-97c6-48c59d359f4d"/>
+    <wants xsi:type="iStarMetamodel:Task" name="On demand" id="660af2e1-23ed-4ea1-9bdd-913a7d4577c7"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Programmed" id="7387de73-d8cc-40d8-b061-9801c28efb8b"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Appliance Smart Control" id="c88ad941-6bad-42cf-a159-c9da7c48d5a8">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="660af2e1-23ed-4ea1-9bdd-913a7d4577c7 7387de73-d8cc-40d8-b061-9801c28efb8b"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Smart Power Monitoring" id="e1c14597-4757-4419-ab21-ea876f3fb6f1">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="61b2f320-7cb6-4d2e-9ba2-f2fdf737f97e 7faeed93-c26d-47fe-a5b9-7c730a8d6a7c"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Notify Power Consumption" id="7faeed93-c26d-47fe-a5b9-7c730a8d6a7c"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Smart Appliance Monitoring" id="2234c068-f3c6-4790-85db-c8bdc7d2a5fc">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="a8a60cea-5640-4f5c-8400-7da4577f40e3 b77a89ba-60e8-4fad-b164-ae29b2b49585"/>
+    </wants>
+  </actors>
+  <actors id="0b8bc0fc-29bc-4692-87c2-f8eb2c65178c" name="Green Manager">
+    <wants xsi:type="iStarMetamodel:Goal" name="Power Consumption Managed" id="f9602f87-9edd-4498-bfdb-5f394978d50e">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="84e97811-27be-4f71-8845-41c006c4cb39 1ffe2b00-7822-438b-aa08-ea9821da7d9c"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Appliance operation coordinated" id="ea947d7d-4cbf-476a-a5ce-1aa65d3d3cee">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="d1b9a56a-81eb-48ce-9532-8e4815f40aa1 590816a1-83f4-4d90-8dc8-e3220a07df0b"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Validate Schedule" id="590816a1-83f4-4d90-8dc8-e3220a07df0b"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Adapt to user preferences" id="f9dc1165-7e07-4fcd-a11f-e6c469160f65">
+      <contribution type="Make" contributesTo="7f3f9ee0-751b-4b86-82be-6ed3c5115d6d"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Adapt to user needs" id="d404003e-13bc-4401-bb9f-83812e449f5c">
+      <contribution type="Help" contributesTo="7f3f9ee0-751b-4b86-82be-6ed3c5115d6d"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Quality" name="user comfort" id="7f3f9ee0-751b-4b86-82be-6ed3c5115d6d"/>
+    <wants xsi:type="iStarMetamodel:Quality" name="Energy Efficiency" id="7a6ade96-836f-40f1-a73d-4bbe03cb3904">
+      <contribution type="Make" contributesTo="45c76d0a-8531-4368-a482-07754663f4cf"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Quality" name="Sustainable Home" id="45c76d0a-8531-4368-a482-07754663f4cf"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Adapt to Energy tariff" id="24e8fe07-57fe-4774-9e7f-bbe353bda95a">
+      <contribution type="Help" contributesTo="7a6ade96-836f-40f1-a73d-4bbe03cb3904"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Adapted to Power limit" id="0ff46abe-66ff-48a7-857e-fe2463cba0fa">
+      <contribution type="Make" contributesTo="9f4c45c4-79a8-4700-a324-cc9bc41160ec"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Quality" name="Avoid Power Interruption" id="9f4c45c4-79a8-4700-a324-cc9bc41160ec">
+      <contribution type="Make" contributesTo="7f3f9ee0-751b-4b86-82be-6ed3c5115d6d"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Collect Appliance Status" id="d1b9a56a-81eb-48ce-9532-8e4815f40aa1"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Trade-off confort efficiency" id="a2558ca3-54c4-48db-9a55-04966f9f5681"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Schedule Operation Remotely" id="1e355302-80b7-49eb-8383-30b09acde229"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Appliance Data Collected" id="1a526337-a1f1-4a6e-bb32-4e572ecbba62"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Scheduling Strategy Selected" id="05083c15-e8a0-42d6-89f8-a0af50514d9b">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="f9dc1165-7e07-4fcd-a11f-e6c469160f65 d404003e-13bc-4401-bb9f-83812e449f5c 24e8fe07-57fe-4774-9e7f-bbe353bda95a a2558ca3-54c4-48db-9a55-04966f9f5681 0ff46abe-66ff-48a7-857e-fe2463cba0fa"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Schedule Obtained" id="44e8149f-aff7-4567-b573-bb8ae1957f5f">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="3c5cafdf-fa1d-4af8-80da-60042bc5dedf 082825da-e65d-43cd-a278-de98a420191f"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="User confirms" id="3c5cafdf-fa1d-4af8-80da-60042bc5dedf">
+      <contribution type="Help" contributesTo="7f3f9ee0-751b-4b86-82be-6ed3c5115d6d"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="System confirms" id="082825da-e65d-43cd-a278-de98a420191f">
+      <contribution type="Help" contributesTo="7a6ade96-836f-40f1-a73d-4bbe03cb3904"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Operation Schedule Executed" id="84e97811-27be-4f71-8845-41c006c4cb39">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="ca5702c1-ef19-4db0-8b9d-46e2b5f1d713 ea947d7d-4cbf-476a-a5ce-1aa65d3d3cee"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Appliance Operations Scheduled" id="ca5702c1-ef19-4db0-8b9d-46e2b5f1d713">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="1e355302-80b7-49eb-8383-30b09acde229 03f6bbd4-a7b6-4ddb-85ab-4c016fb3f5e0"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Schedule Operation Manually" id="03f6bbd4-a7b6-4ddb-85ab-4c016fb3f5e0"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Operation Schedule Generated" id="1ffe2b00-7822-438b-aa08-ea9821da7d9c">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="44e8149f-aff7-4567-b573-bb8ae1957f5f 05083c15-e8a0-42d6-89f8-a0af50514d9b 1a526337-a1f1-4a6e-bb32-4e572ecbba62"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Quality" name="Water Saving" id="3464039d-db2c-4ceb-9c59-ff702a6666f3">
+      <contribution type="Make" contributesTo="45c76d0a-8531-4368-a482-07754663f4cf"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Water Consumption Managed" id="4db137d8-f68d-4032-936b-721801a1e551"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Fault Control" id="a0274069-117f-42e5-b36b-7818ad639365">
+      <contribution type="Help" contributesTo="9f4c45c4-79a8-4700-a324-cc9bc41160ec"/>
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="ee262ff8-671c-476e-91c7-32ab9a58c619 1e4243db-b20f-4376-a266-a486cdc76f52 3aeb5e0e-fbad-4ddd-8f7d-e5e983c49e81"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Detect Fault" id="ee262ff8-671c-476e-91c7-32ab9a58c619"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Notify Fault" id="1e4243db-b20f-4376-a266-a486cdc76f52"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Fault Corrected" id="3aeb5e0e-fbad-4ddd-8f7d-e5e983c49e81">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="b953f638-38d0-4579-aab3-eae70df49725 6193e95f-b149-42d2-ae79-26ee061ee07c"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="By user" id="b953f638-38d0-4579-aab3-eae70df49725"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="By S.T." id="6193e95f-b149-42d2-ae79-26ee061ee07c"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Water Consumption Managed" id="06f5719c-b3ff-4a16-8dab-6ac6aa38fcfc">
+      <contribution type="Make" contributesTo="3464039d-db2c-4ceb-9c59-ff702a6666f3"/>
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="574d7dc9-e9ca-4bbd-ba15-e2e4256acb73 d316bc8b-bb00-489e-84bd-14235f82cd2f"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Operation Schedule Generated" id="574d7dc9-e9ca-4bbd-ba15-e2e4256acb73"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Operation Schedule Executed" id="d316bc8b-bb00-489e-84bd-14235f82cd2f"/>
+  </actors>
+  <actors id="ee754cbb-167f-474f-a594-7c24881649b6" name="Electric Company"/>
+  <actors xsi:type="iStarMetamodel:Agent" id="dbc06bc4-6d48-45d7-a97d-a46db6a73dbb" participatesIn="db47d0cc-6136-4020-8fcd-9f07ab3d7208" name="Siemens Connected Oven">
+    <wants xsi:type="iStarMetamodel:Goal" name="Appliance Programmed" id="8b18a96a-ab70-479d-96a6-e70eaaf2a106">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="4d9a891a-5636-4e90-8a64-7157158478c6 477d3458-6149-44a7-93df-d37396f12e51"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Pick Recipe" id="4ec08f82-6ea3-4656-a2cf-4bfd811c3622"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Set Timer" id="6be1b42b-3f3d-454a-84d3-40e7e00e97e4"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Set Oven Program" id="4d9a891a-5636-4e90-8a64-7157158478c6">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="4ec08f82-6ea3-4656-a2cf-4bfd811c3622 6be1b42b-3f3d-454a-84d3-40e7e00e97e4 7c6fb14e-f276-43ed-a7d4-c16855c851b9"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Control Oven Operation" id="477d3458-6149-44a7-93df-d37396f12e51">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="76b8e01d-33f6-4447-97c4-3d1586cc3035 cd07e0e7-141f-4170-9e25-3b46e593537f"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Turn On" id="76b8e01d-33f6-4447-97c4-3d1586cc3035"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Turn Off" id="cd07e0e7-141f-4170-9e25-3b46e593537f"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Manual" id="7c6fb14e-f276-43ed-a7d4-c16855c851b9"/>
+  </actors>
+  <actors xsi:type="iStarMetamodel:Agent" id="87ed9007-65ac-46fb-bbb0-2f7bb756a178" participatesIn="2cbee5af-a5f9-4af5-a4ca-1f0471b6774e" name="Samsung Smart Washer"/>
+  <actors xsi:type="iStarMetamodel:Role" isA="8299e3aa-ac26-48eb-92d4-3247902f8285" id="2cbee5af-a5f9-4af5-a4ca-1f0471b6774e" name="Washer Advanced Controller">
+    <wants xsi:type="iStarMetamodel:Goal" name="Smart Water Monitoring" id="2e0fd6f1-f7e1-4ced-8ae3-d55551918662">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="5361e1cc-2efa-4060-9f0a-3eea0b8c5dc5 992411e7-a29a-46f6-a629-855120dbb68f"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Monitor Water Consumption" id="5361e1cc-2efa-4060-9f0a-3eea0b8c5dc5"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Notify Water Consumption" id="992411e7-a29a-46f6-a629-855120dbb68f"/>
+  </actors>
+  <actors xsi:type="iStarMetamodel:Role" isA="8299e3aa-ac26-48eb-92d4-3247902f8285" id="db47d0cc-6136-4020-8fcd-9f07ab3d7208" name="Cooking Advanced Controller"/>
+</iStarMetamodel:IStarModel>

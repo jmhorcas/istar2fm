@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<featureModelMetamodel:FeatureModel xmlns:featureModelMetamodel="http://caosd.lcc.uma.es/featureModelMetamodel" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" features="MyFeatureRoot _8299E3AaAc2648Eb92D43247902F8285 ApplianceBasicControllerGoals ApplianceBasicControllerPlans ApplianceBasicControllerContext ApplianceBasicControllerQAs _C88Ad9416Bad42CfA159C9Da7C48D5A8 _E1C1459747574419Ab21Ea876F3Fb6F1 _2234C068F3C6479085DbC8Bdc7D2A5Fc _9225EbdbDb51449E8D7AB6095E0E1477 _3E3E7C32144749D4A078A6B7F17Cf4C3 _61B2F3207Cb64D2E9Ba2F2Fdf737F97E _A8A60Cea56404F5C84007Da4577F40E3 _B77A89Ba60E84FadB164Ae29B2B49585 _660Af2E123Ed4Ea19Bdd913A7D4577C7 _7387De73D8Cc40D8B0619801C28Efb8B _7Faeed93C26D47FeA5B97C730A8D6A7C _32097Aa06E914D52B1C5838206D366F7 _C08Fb2A0A28F407897C648C59D359F4D _2Cbee5AfA5F94Af5A4Ca1F0471B6774E WasherAdvancedControllerGoals WasherAdvancedControllerPlans WasherAdvancedControllerContext WasherAdvancedControllerQAs _2E0Fd6F1F7E14Ced8Ae3D55551918662 _5361E1Cc2Efa40609F0A3Eea0B8C5Dc5 _992411E7A29A46F6A629855120Dbb68F _Db47D0Cc613640208Fcd9F07Ab3D7208 CookingAdvancedControllerGoals CookingAdvancedControllerPlans CookingAdvancedControllerContext CookingAdvancedControllerQAs _0B8Bc0Fc29Bc469287C2F8Eb2C65178C GreenManagerGoals GreenManagerPlans GreenManagerContext GreenManagerQAs _F9602F879Edd4498Bfdb5F394978D50E _84E9781127Be4F71884541C006C4Cb39 _Ca5702C1Ef194Db08B9D46E2B5F1D713 _Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee _1Ffe2B007822438BAa08Ea9821Da7D9C _44E8149FAff74567B573Bb8Ae1957F5F _05083C15E8A042D689F8A0Af50514D9B _F9Dc11657E074FcdA11FE6C469160F65 _D404003E13Bc4401Bb9F83812E449F5C _24E8Fe0757Fe47749E7FBbe353Bda95A _A2558Ca354C448Db9A5504966F9F5681 _0Ff46Abe66Ff48A7857EFe2463Cba0Fa _1A526337A1F14A6EBb324E572Ecbba62 _4Db137D8F68D4032936B721801A1E551 _590816A183F44D908Dc8E3220A07Df0B _D1B9A56A81Eb48Ce95328E4815F40Aa1 _1E35530280B749Eb838330B09Acde229 _3C5CafdfFa1D4Af880Da60042Bc5Dedf _082825DaE65D43CdA278De98A420191F _03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0 _7F3F9Ee0751B4B8682Be6Ed3C5115D6D _7A6Ade96836F40F1A73D4Bbe03Cb3904 _45C76D0A85314368A48207754663F4Cf _9F4C45C479A84700A324Cc9Bc41160Ec _Ee754Cbb167F474FA5947C24881649B6 ElectricCompanyGoals ElectricCompanyPlans ElectricCompanyContext ElectricCompanyQAs _92C8Ba73Be4F4A6286247F12Fb046D0B _F6D03A16Bef14E77925784Dc9D64A3D0" xmi:version="2.0">
+  <constraints language="First-order logic" code="_C88Ad9416Bad42CfA159C9Da7C48D5A8 implies (_660Af2E123Ed4Ea19Bdd913A7D4577C7 or _7387De73D8Cc40D8B0619801C28Efb8B)" id="__C88Ad9416Bad42CfA159C9Da7C48D5A8 implies (_660Af2E123Ed4Ea19Bdd913A7D4577C7 or _7387De73D8Cc40D8B0619801C28Efb8B)"/>
+  <constraints language="First-order logic" code="_660Af2E123Ed4Ea19Bdd913A7D4577C7 implies not (_7387De73D8Cc40D8B0619801C28Efb8B)" id="__660Af2E123Ed4Ea19Bdd913A7D4577C7 implies not (_7387De73D8Cc40D8B0619801C28Efb8B)"/>
+  <constraints language="First-order logic" code="_7387De73D8Cc40D8B0619801C28Efb8B implies not (_660Af2E123Ed4Ea19Bdd913A7D4577C7)" id="__7387De73D8Cc40D8B0619801C28Efb8B implies not (_660Af2E123Ed4Ea19Bdd913A7D4577C7)"/>
+  <constraints language="First-order logic" code="_E1C1459747574419Ab21Ea876F3Fb6F1 implies (_61B2F3207Cb64D2E9Ba2F2Fdf737F97E and _7Faeed93C26D47FeA5B97C730A8D6A7C)" id="__E1C1459747574419Ab21Ea876F3Fb6F1 implies (_61B2F3207Cb64D2E9Ba2F2Fdf737F97E and _7Faeed93C26D47FeA5B97C730A8D6A7C)"/>
+  <constraints language="First-order logic" code="_2234C068F3C6479085DbC8Bdc7D2A5Fc implies (_A8A60Cea56404F5C84007Da4577F40E3 and _B77A89Ba60E84FadB164Ae29B2B49585)" id="__2234C068F3C6479085DbC8Bdc7D2A5Fc implies (_A8A60Cea56404F5C84007Da4577F40E3 and _B77A89Ba60E84FadB164Ae29B2B49585)"/>
+  <constraints language="First-order logic" code="_61B2F3207Cb64D2E9Ba2F2Fdf737F97E implies _32097Aa06E914D52B1C5838206D366F7" id="__61B2F3207Cb64D2E9Ba2F2Fdf737F97E implies _32097Aa06E914D52B1C5838206D366F7"/>
+  <constraints language="First-order logic" code="_A8A60Cea56404F5C84007Da4577F40E3 implies _C08Fb2A0A28F407897C648C59D359F4D" id="__A8A60Cea56404F5C84007Da4577F40E3 implies _C08Fb2A0A28F407897C648C59D359F4D"/>
+  <constraints language="First-order logic" code="_2E0Fd6F1F7E14Ced8Ae3D55551918662 implies (_5361E1Cc2Efa40609F0A3Eea0B8C5Dc5 and _992411E7A29A46F6A629855120Dbb68F)" id="__2E0Fd6F1F7E14Ced8Ae3D55551918662 implies (_5361E1Cc2Efa40609F0A3Eea0B8C5Dc5 and _992411E7A29A46F6A629855120Dbb68F)"/>
+  <constraints language="First-order logic" code="_Ca5702C1Ef194Db08B9D46E2B5F1D713 implies (_1E35530280B749Eb838330B09Acde229 or _03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0)" id="__Ca5702C1Ef194Db08B9D46E2B5F1D713 implies (_1E35530280B749Eb838330B09Acde229 or _03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0)"/>
+  <constraints language="First-order logic" code="_1E35530280B749Eb838330B09Acde229 implies not (_03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0)" id="__1E35530280B749Eb838330B09Acde229 implies not (_03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0)"/>
+  <constraints language="First-order logic" code="_03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0 implies not (_1E35530280B749Eb838330B09Acde229)" id="__03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0 implies not (_1E35530280B749Eb838330B09Acde229)"/>
+  <constraints language="First-order logic" code="_Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee implies (_D1B9A56A81Eb48Ce95328E4815F40Aa1 and _590816A183F44D908Dc8E3220A07Df0B)" id="__Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee implies (_D1B9A56A81Eb48Ce95328E4815F40Aa1 and _590816A183F44D908Dc8E3220A07Df0B)"/>
+  <constraints language="First-order logic" code="_44E8149FAff74567B573Bb8Ae1957F5F implies (_3C5CafdfFa1D4Af880Da60042Bc5Dedf or _082825DaE65D43CdA278De98A420191F)" id="__44E8149FAff74567B573Bb8Ae1957F5F implies (_3C5CafdfFa1D4Af880Da60042Bc5Dedf or _082825DaE65D43CdA278De98A420191F)"/>
+  <constraints language="First-order logic" code="_3C5CafdfFa1D4Af880Da60042Bc5Dedf implies not (_082825DaE65D43CdA278De98A420191F)" id="__3C5CafdfFa1D4Af880Da60042Bc5Dedf implies not (_082825DaE65D43CdA278De98A420191F)"/>
+  <constraints language="First-order logic" code="_082825DaE65D43CdA278De98A420191F implies not (_3C5CafdfFa1D4Af880Da60042Bc5Dedf)" id="__082825DaE65D43CdA278De98A420191F implies not (_3C5CafdfFa1D4Af880Da60042Bc5Dedf)"/>
+  <constraints language="First-order logic" code="_F9Dc11657E074FcdA11FE6C469160F65 implies _7F3F9Ee0751B4B8682Be6Ed3C5115D6D" id="_F9Dc11657E074Fcda11Fe6C469160F65Implies_7F3F9Ee0751B4B8682Be6Ed3C5115D6D"/>
+  <constraints language="First-order logic" code="_D404003E13Bc4401Bb9F83812E449F5C implies _7F3F9Ee0751B4B8682Be6Ed3C5115D6D" id="_D404003E13Bc4401Bb9F83812E449F5CImplies_7F3F9Ee0751B4B8682Be6Ed3C5115D6D"/>
+  <constraints language="First-order logic" code="_24E8Fe0757Fe47749E7FBbe353Bda95A implies _7A6Ade96836F40F1A73D4Bbe03Cb3904" id="_24E8Fe0757Fe47749E7Fbbe353Bda95AImplies_7A6Ade96836F40F1A73D4Bbe03Cb3904"/>
+  <constraints language="First-order logic" code="_0Ff46Abe66Ff48A7857EFe2463Cba0Fa implies _9F4C45C479A84700A324Cc9Bc41160Ec" id="_0Ff46Abe66Ff48A7857Efe2463Cba0FaImplies_9F4C45C479A84700A324Cc9Bc41160Ec"/>
+  <constraints language="First-order logic" code="_3C5CafdfFa1D4Af880Da60042Bc5Dedf implies _7F3F9Ee0751B4B8682Be6Ed3C5115D6D" id="_3C5Cafdffa1D4Af880Da60042Bc5DedfImplies_7F3F9Ee0751B4B8682Be6Ed3C5115D6D"/>
+  <constraints language="First-order logic" code="_082825DaE65D43CdA278De98A420191F implies _7A6Ade96836F40F1A73D4Bbe03Cb3904" id="_082825Dae65D43Cda278De98A420191FImplies_7A6Ade96836F40F1A73D4Bbe03Cb3904"/>
+  <constraints language="First-order logic" code="_7A6Ade96836F40F1A73D4Bbe03Cb3904 implies _45C76D0A85314368A48207754663F4Cf" id="_7A6Ade96836F40F1A73D4Bbe03Cb3904Implies_45C76D0A85314368A48207754663F4Cf"/>
+  <constraints language="First-order logic" code="_9F4C45C479A84700A324Cc9Bc41160Ec implies _7F3F9Ee0751B4B8682Be6Ed3C5115D6D" id="_9F4C45C479A84700A324Cc9Bc41160EcImplies_7F3F9Ee0751B4B8682Be6Ed3C5115D6D"/>
+  <root id="MyFeatureRoot" variabilityType="mandatory" name="MyFeatureRoot">
+    <children xsi:type="featureModelMetamodel:ClonableFeature" id="_8299E3AaAc2648Eb92D43247902F8285" variabilityType="or" parent="MyFeatureRoot" name="ApplianceBasicController">
+      <instanceMultiplicity upper="-1" lower="1"/>
+      <children parent="_8299E3AaAc2648Eb92D43247902F8285" variabilityType="mandatory" name="ApplianceBasicControllerGoals" id="ApplianceBasicControllerGoals">
+        <children parent="ApplianceBasicControllerGoals" variabilityType="optional" name="ApplianceSmartControl" id="_C88Ad9416Bad42CfA159C9Da7C48D5A8"/>
+        <children parent="ApplianceBasicControllerGoals" variabilityType="optional" name="SmartPowerMonitoring" id="_E1C1459747574419Ab21Ea876F3Fb6F1"/>
+        <children parent="ApplianceBasicControllerGoals" variabilityType="optional" name="SmartApplianceMonitoring" id="_2234C068F3C6479085DbC8Bdc7D2A5Fc"/>
+        <children parent="ApplianceBasicControllerGoals" variabilityType="optional" name="ApplianceControlled" id="_9225EbdbDb51449E8D7AB6095E0E1477"/>
+        <children parent="ApplianceBasicControllerGoals" variabilityType="optional" name="PowerConsumptionMonitored" id="_3E3E7C32144749D4A078A6B7F17Cf4C3"/>
+      </children>
+      <children parent="_8299E3AaAc2648Eb92D43247902F8285" variabilityType="optional" name="ApplianceBasicControllerPlans" id="ApplianceBasicControllerPlans">
+        <children parent="ApplianceBasicControllerPlans" variabilityType="optional" name="MonitorPowerConsumption" id="_61B2F3207Cb64D2E9Ba2F2Fdf737F97E"/>
+        <children parent="ApplianceBasicControllerPlans" variabilityType="optional" name="CheckApplianceOperation" id="_A8A60Cea56404F5C84007Da4577F40E3"/>
+        <children parent="ApplianceBasicControllerPlans" variabilityType="optional" name="NotifyState" id="_B77A89Ba60E84FadB164Ae29B2B49585"/>
+        <children parent="ApplianceBasicControllerPlans" variabilityType="optional" name="OnDemand" id="_660Af2E123Ed4Ea19Bdd913A7D4577C7"/>
+        <children parent="ApplianceBasicControllerPlans" variabilityType="optional" name="Programmed" id="_7387De73D8Cc40D8B0619801C28Efb8B"/>
+        <children parent="ApplianceBasicControllerPlans" variabilityType="optional" name="NotifyPowerConsumption" id="_7Faeed93C26D47FeA5B97C730A8D6A7C"/>
+      </children>
+      <children parent="_8299E3AaAc2648Eb92D43247902F8285" variabilityType="optional" name="ApplianceBasicControllerContext" id="ApplianceBasicControllerContext">
+        <children parent="ApplianceBasicControllerContext" variabilityType="optional" name="PowerConsumption" id="_32097Aa06E914D52B1C5838206D366F7"/>
+        <children parent="ApplianceBasicControllerContext" variabilityType="optional" name="ApplianceState" id="_C08Fb2A0A28F407897C648C59D359F4D"/>
+      </children>
+      <children parent="_8299E3AaAc2648Eb92D43247902F8285" variabilityType="optional" name="ApplianceBasicControllerQAs" id="ApplianceBasicControllerQAs"/>
+    </children>
+    <children xsi:type="featureModelMetamodel:ClonableFeature" id="_2Cbee5AfA5F94Af5A4Ca1F0471B6774E" variabilityType="or" parent="MyFeatureRoot" name="WasherAdvancedController">
+      <instanceMultiplicity upper="-1" lower="1"/>
+      <children parent="_2Cbee5AfA5F94Af5A4Ca1F0471B6774E" variabilityType="mandatory" name="WasherAdvancedControllerGoals" id="WasherAdvancedControllerGoals">
+        <children parent="WasherAdvancedControllerGoals" variabilityType="optional" name="SmartWaterMonitoring" id="_2E0Fd6F1F7E14Ced8Ae3D55551918662"/>
+      </children>
+      <children parent="_2Cbee5AfA5F94Af5A4Ca1F0471B6774E" variabilityType="optional" name="WasherAdvancedControllerPlans" id="WasherAdvancedControllerPlans">
+        <children parent="WasherAdvancedControllerPlans" variabilityType="optional" name="MonitorWaterConsumption" id="_5361E1Cc2Efa40609F0A3Eea0B8C5Dc5"/>
+        <children parent="WasherAdvancedControllerPlans" variabilityType="optional" name="NotifyWaterConsumption" id="_992411E7A29A46F6A629855120Dbb68F"/>
+      </children>
+      <children parent="_2Cbee5AfA5F94Af5A4Ca1F0471B6774E" variabilityType="optional" name="WasherAdvancedControllerContext" id="WasherAdvancedControllerContext"/>
+      <children parent="_2Cbee5AfA5F94Af5A4Ca1F0471B6774E" variabilityType="optional" name="WasherAdvancedControllerQAs" id="WasherAdvancedControllerQAs"/>
+    </children>
+    <children xsi:type="featureModelMetamodel:ClonableFeature" id="_Db47D0Cc613640208Fcd9F07Ab3D7208" variabilityType="or" parent="MyFeatureRoot" name="CookingAdvancedController">
+      <instanceMultiplicity upper="-1" lower="1"/>
+      <children parent="_Db47D0Cc613640208Fcd9F07Ab3D7208" variabilityType="mandatory" name="CookingAdvancedControllerGoals" id="CookingAdvancedControllerGoals"/>
+      <children parent="_Db47D0Cc613640208Fcd9F07Ab3D7208" variabilityType="optional" name="CookingAdvancedControllerPlans" id="CookingAdvancedControllerPlans"/>
+      <children parent="_Db47D0Cc613640208Fcd9F07Ab3D7208" variabilityType="optional" name="CookingAdvancedControllerContext" id="CookingAdvancedControllerContext"/>
+      <children parent="_Db47D0Cc613640208Fcd9F07Ab3D7208" variabilityType="optional" name="CookingAdvancedControllerQAs" id="CookingAdvancedControllerQAs"/>
+    </children>
+    <children parent="MyFeatureRoot" variabilityType="or" name="GreenManager" id="_0B8Bc0Fc29Bc469287C2F8Eb2C65178C">
+      <children parent="_0B8Bc0Fc29Bc469287C2F8Eb2C65178C" variabilityType="mandatory" name="GreenManagerGoals" id="GreenManagerGoals">
+        <children parent="GreenManagerGoals" variabilityType="optional" name="PowerConsumptionManaged" id="_F9602F879Edd4498Bfdb5F394978D50E">
+          <children parent="_F9602F879Edd4498Bfdb5F394978D50E" variabilityType="mandatory" name="OperationScheduleExecuted" id="_84E9781127Be4F71884541C006C4Cb39">
+            <children parent="_84E9781127Be4F71884541C006C4Cb39" variabilityType="mandatory" name="ApplianceOperationsScheduled" id="_Ca5702C1Ef194Db08B9D46E2B5F1D713"/>
+            <children parent="_84E9781127Be4F71884541C006C4Cb39" variabilityType="mandatory" name="ApplianceOperationCoordinated" id="_Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee"/>
+          </children>
+          <children parent="_F9602F879Edd4498Bfdb5F394978D50E" variabilityType="mandatory" name="OperationScheduleGenerated" id="_1Ffe2B007822438BAa08Ea9821Da7D9C">
+            <children parent="_1Ffe2B007822438BAa08Ea9821Da7D9C" variabilityType="mandatory" name="ScheduleObtained" id="_44E8149FAff74567B573Bb8Ae1957F5F"/>
+            <children id="_05083C15E8A042D689F8A0Af50514D9B" variabilityType="mandatory" parent="_1Ffe2B007822438BAa08Ea9821Da7D9C" name="SchedulingStrategySelected">
+              <children parent="_05083C15E8A042D689F8A0Af50514D9B" variabilityType="alternative" name="AdaptToUserPreferences" id="_F9Dc11657E074FcdA11FE6C469160F65"/>
+              <children parent="_05083C15E8A042D689F8A0Af50514D9B" variabilityType="alternative" name="AdaptToUserNeeds" id="_D404003E13Bc4401Bb9F83812E449F5C"/>
+              <children parent="_05083C15E8A042D689F8A0Af50514D9B" variabilityType="alternative" name="AdaptToEnergyTariff" id="_24E8Fe0757Fe47749E7FBbe353Bda95A"/>
+              <children parent="_05083C15E8A042D689F8A0Af50514D9B" variabilityType="alternative" name="TradeOffConfortEfficiency" id="_A2558Ca354C448Db9A5504966F9F5681"/>
+              <children parent="_05083C15E8A042D689F8A0Af50514D9B" variabilityType="alternative" name="AdaptedToPowerLimit" id="_0Ff46Abe66Ff48A7857EFe2463Cba0Fa"/>
+              <groupMultiplicity upper="1" lower="1" features="_F9Dc11657E074FcdA11FE6C469160F65 _D404003E13Bc4401Bb9F83812E449F5C _24E8Fe0757Fe47749E7FBbe353Bda95A _A2558Ca354C448Db9A5504966F9F5681 _0Ff46Abe66Ff48A7857EFe2463Cba0Fa"/>
+            </children>
+            <children parent="_1Ffe2B007822438BAa08Ea9821Da7D9C" variabilityType="mandatory" name="ApplianceDataCollected" id="_1A526337A1F14A6EBb324E572Ecbba62"/>
+          </children>
+        </children>
+        <children parent="GreenManagerGoals" variabilityType="optional" name="WaterConsumptionManaged" id="_4Db137D8F68D4032936B721801A1E551"/>
+      </children>
+      <children parent="_0B8Bc0Fc29Bc469287C2F8Eb2C65178C" variabilityType="optional" name="GreenManagerPlans" id="GreenManagerPlans">
+        <children parent="GreenManagerPlans" variabilityType="optional" name="ValidateSchedule" id="_590816A183F44D908Dc8E3220A07Df0B"/>
+        <children parent="GreenManagerPlans" variabilityType="optional" name="CollectApplianceStatus" id="_D1B9A56A81Eb48Ce95328E4815F40Aa1"/>
+        <children parent="GreenManagerPlans" variabilityType="optional" name="ScheduleOperationRemotely" id="_1E35530280B749Eb838330B09Acde229"/>
+        <children parent="GreenManagerPlans" variabilityType="optional" name="UserConfirms" id="_3C5CafdfFa1D4Af880Da60042Bc5Dedf"/>
+        <children parent="GreenManagerPlans" variabilityType="optional" name="SystemConfirms" id="_082825DaE65D43CdA278De98A420191F"/>
+        <children parent="GreenManagerPlans" variabilityType="optional" name="ScheduleOperationManually" id="_03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0"/>
+      </children>
+      <children parent="_0B8Bc0Fc29Bc469287C2F8Eb2C65178C" variabilityType="optional" name="GreenManagerContext" id="GreenManagerContext"/>
+      <children parent="_0B8Bc0Fc29Bc469287C2F8Eb2C65178C" variabilityType="optional" name="GreenManagerQAs" id="GreenManagerQAs">
+        <children parent="GreenManagerQAs" variabilityType="optional" name="UserComfort" id="_7F3F9Ee0751B4B8682Be6Ed3C5115D6D"/>
+        <children parent="GreenManagerQAs" variabilityType="optional" name="EnergyEfficiency" id="_7A6Ade96836F40F1A73D4Bbe03Cb3904"/>
+        <children parent="GreenManagerQAs" variabilityType="optional" name="SustainableHome" id="_45C76D0A85314368A48207754663F4Cf"/>
+        <children parent="GreenManagerQAs" variabilityType="optional" name="AvoidPowerInterruption" id="_9F4C45C479A84700A324Cc9Bc41160Ec"/>
+      </children>
+    </children>
+    <children parent="MyFeatureRoot" variabilityType="or" name="ElectricCompany" id="_Ee754Cbb167F474FA5947C24881649B6">
+      <children parent="_Ee754Cbb167F474FA5947C24881649B6" variabilityType="mandatory" name="ElectricCompanyGoals" id="ElectricCompanyGoals"/>
+      <children parent="_Ee754Cbb167F474FA5947C24881649B6" variabilityType="optional" name="ElectricCompanyPlans" id="ElectricCompanyPlans"/>
+      <children parent="_Ee754Cbb167F474FA5947C24881649B6" variabilityType="optional" name="ElectricCompanyContext" id="ElectricCompanyContext">
+        <children parent="ElectricCompanyContext" variabilityType="optional" name="EnergyTariff" id="_92C8Ba73Be4F4A6286247F12Fb046D0B"/>
+        <children parent="ElectricCompanyContext" variabilityType="optional" name="PowerLimitContracted" id="_F6D03A16Bef14E77925784Dc9D64A3D0"/>
+      </children>
+      <children parent="_Ee754Cbb167F474FA5947C24881649B6" variabilityType="optional" name="ElectricCompanyQAs" id="ElectricCompanyQAs"/>
+    </children>
+    <groupMultiplicity upper="-1" lower="1" features="_8299E3AaAc2648Eb92D43247902F8285 _2Cbee5AfA5F94Af5A4Ca1F0471B6774E _Db47D0Cc613640208Fcd9F07Ab3D7208 _0B8Bc0Fc29Bc469287C2F8Eb2C65178C _Ee754Cbb167F474FA5947C24881649B6"/>
+  </root>
+</featureModelMetamodel:FeatureModel>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iStarMetamodel:IStarModel xmlns:iStarMetamodel="http://caosd.lcc.uma.es/iStarMetamodel" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <dependencies dependerElmt="9bb7e927-3dee-4485-8fda-01954d324c88" dependee="9ebf064b-88e2-48e0-9a63-7adda0ae89d0" id="fe9bc590-394b-4585-be24-66419eb353b9" depender="830b5ef8-0f41-4a17-ba2a-ba4a8f4e799b" name="Online form processed" dependeeElmt="ac7c22c2-6538-4fe3-a14f-8f8a2233a472">
+    <dependum xsi:type="iStarMetamodel:Goal" name="Online form processed" id="fe9bc590-394b-4585-be24-66419eb353b9"/>
+  </dependencies>
+  <dependencies dependerElmt="f2ad4e2a-1b6d-44ce-94d7-28aee4e08d3d" dependee="3c57900f-ba6a-4277-ba86-a688b23628a8" id="dc25d9f6-7aea-46fd-8b59-1e317f5017f1" depender="830b5ef8-0f41-4a17-ba2a-ba4a8f4e799b" name="Trip bundle booked" dependeeElmt="9544119c-dd79-417e-8a19-6f67455d784b">
+    <dependum xsi:type="iStarMetamodel:Goal" name="Trip bundle booked" id="dc25d9f6-7aea-46fd-8b59-1e317f5017f1"/>
+  </dependencies>
+  <dependencies dependerElmt="4934265e-abf6-4fe1-91c9-38c2a6aadcb0" dependee="3c57900f-ba6a-4277-ba86-a688b23628a8" id="f26ec7d2-3133-42b0-b54c-2b4695e9ee1b" depender="830b5ef8-0f41-4a17-ba2a-ba4a8f4e799b" name="Buy flight tickets">
+    <dependum xsi:type="iStarMetamodel:Task" name="Buy flight tickets" id="f26ec7d2-3133-42b0-b54c-2b4695e9ee1b"/>
+  </dependencies>
+  <actors xsi:type="iStarMetamodel:Role" id="830b5ef8-0f41-4a17-ba2a-ba4a8f4e799b" name="Student">
+    <wants xsi:type="iStarMetamodel:Goal" name="Travel organized" id="8f5b5975-10bc-44b5-92b2-c53e2394b2c9">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="d7350e31-1d29-46b0-bce5-e191189720cd 16d9b9bf-fdef-4832-8f7d-8dcb42513371"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Authorization obtained" id="d7350e31-1d29-46b0-bce5-e191189720cd">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="c3f53c8d-b421-4c60-8dbf-03b07978295b 4e767af4-fd1e-4e3e-8a82-3740521e576a"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Request prepared" id="c3f53c8d-b421-4c60-8dbf-03b07978295b">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="191249f9-d249-47db-b5f2-c09449307eb4 9bb7e927-3dee-4485-8fda-01954d324c88"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Authorization signed" id="4e767af4-fd1e-4e3e-8a82-3740521e576a">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="37b28c3f-7554-4c62-91cd-44cac0873977 102cbb1c-5600-4058-bed9-cc9e1ad1d9e9"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Fill in paper form" id="191249f9-d249-47db-b5f2-c09449307eb4">
+      <contribution type="Hurt" contributesTo="0055d468-1097-43b2-95bf-1781730b1985"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Fill in online form" id="9bb7e927-3dee-4485-8fda-01954d324c88">
+      <contribution type="Help" contributesTo="0055d468-1097-43b2-95bf-1781730b1985"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Quality" qualifies="c3f53c8d-b421-4c60-8dbf-03b07978295b" name="No errors" id="0055d468-1097-43b2-95bf-1781730b1985"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Supervisor authorizes" id="37b28c3f-7554-4c62-91cd-44cac0873977">
+      <contribution type="Help" contributesTo="0afa08e3-2306-40c8-9d40-2c144b748664"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Head-of-dept authorizes" id="102cbb1c-5600-4058-bed9-cc9e1ad1d9e9">
+      <contribution type="Break" contributesTo="0afa08e3-2306-40c8-9d40-2c144b748664"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Quality" qualifies="d8991d04-c2a6-45f0-a3ed-3ebed2a2d86d" name="Quick booking" id="0afa08e3-2306-40c8-9d40-2c144b748664">
+      <contribution type="Help" contributesTo="c8e311fd-2a1a-40f1-b5e5-c62eb3e3a397"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Trip booked" id="16d9b9bf-fdef-4832-8f7d-8dcb42513371">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="d8991d04-c2a6-45f0-a3ed-3ebed2a2d86d f2ad4e2a-1b6d-44ce-94d7-28aee4e08d3d"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Trip parts booked" id="d8991d04-c2a6-45f0-a3ed-3ebed2a2d86d">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="f34b98b9-6cba-4410-8a49-451e00049e43 94b43d28-480c-4a22-92ed-c8ba69a1d111"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Bundle booked" id="f2ad4e2a-1b6d-44ce-94d7-28aee4e08d3d">
+      <contribution type="Make" contributesTo="685e4589-9717-487f-aa94-2eab2f7c5b46"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Tickets booked" id="f34b98b9-6cba-4410-8a49-451e00049e43">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="4934265e-abf6-4fe1-91c9-38c2a6aadcb0 11d870d2-7987-45c9-a36a-7b177219ae50"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Accommodati on booked" id="94b43d28-480c-4a22-92ed-c8ba69a1d111">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="89643e71-e10f-4474-9ac6-3ddd413bfda8 b73684df-4238-47d2-ae5a-e9d88df9559a"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Agency buys tickets" id="4934265e-abf6-4fe1-91c9-38c2a6aadcb0">
+      <contribution type="Help" contributesTo="685e4589-9717-487f-aa94-2eab2f7c5b46"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Self-book tickets" id="11d870d2-7987-45c9-a36a-7b177219ae50">
+      <contribution type="Help" contributesTo="0afa08e3-2306-40c8-9d40-2c144b748664"/>
+      <contribution type="Hurt" contributesTo="685e4589-9717-487f-aa94-2eab2f7c5b46"/>
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="1747e206-fa35-4229-b4be-67b3893e84d1 49da8a06-b243-4c6e-9c50-dded496bec94"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Conference hotel booked" id="89643e71-e10f-4474-9ac6-3ddd413bfda8"/>
+    <wants xsi:type="iStarMetamodel:Goal" name="Budget hotel booked" id="b73684df-4238-47d2-ae5a-e9d88df9559a">
+      <refines xsi:type="iStarMetamodel:ORRefinement" to="13efea03-96a0-4162-b89e-f46efc9a96c4 59d154e2-8af7-48da-9f55-195ffebab399"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Task" name="Buy tickets" id="1747e206-fa35-4229-b4be-67b3893e84d1"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Pay for tickets" id="49da8a06-b243-4c6e-9c50-dded496bec94"/>
+    <wants xsi:type="iStarMetamodel:Resource" neededBy="49da8a06-b243-4c6e-9c50-dded496bec94" name="Credit card" id="8a867e08-5a70-4816-ab02-1d84cf1b79dd"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Buy through booking.com" id="13efea03-96a0-4162-b89e-f46efc9a96c4"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Buy through hotel website" id="59d154e2-8af7-48da-9f55-195ffebab399"/>
+    <wants xsi:type="iStarMetamodel:Quality" name="Comfort" id="c8e311fd-2a1a-40f1-b5e5-c62eb3e3a397"/>
+    <wants xsi:type="iStarMetamodel:Quality" name="Minimal own payments" id="685e4589-9717-487f-aa94-2eab2f7c5b46">
+      <contribution type="Help" contributesTo="c8e311fd-2a1a-40f1-b5e5-c62eb3e3a397"/>
+    </wants>
+  </actors>
+  <actors xsi:type="iStarMetamodel:Agent" id="9ebf064b-88e2-48e0-9a63-7adda0ae89d0" participatesIn="a0b5233e-414b-4c96-b87c-45d3167c1ea6" name="Univ. trip mgmt IS">
+    <wants xsi:type="iStarMetamodel:Task" name="Process form" id="ac7c22c2-6538-4fe3-a14f-8f8a2233a472">
+      <refines xsi:type="iStarMetamodel:ANDRefinement" to="7897dbdc-5dd5-4332-9e31-cac22e01f1e1 609eedc5-29e7-4360-b9ad-5ca23076033c 334c70d0-7786-4dda-8340-aa63c921bc03"/>
+    </wants>
+    <wants xsi:type="iStarMetamodel:Goal" name="Details validated" id="7897dbdc-5dd5-4332-9e31-cac22e01f1e1"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Request authorization" id="609eedc5-29e7-4360-b9ad-5ca23076033c"/>
+    <wants xsi:type="iStarMetamodel:Task" name="Notify applicant" id="334c70d0-7786-4dda-8340-aa63c921bc03"/>
+  </actors>
+  <actors xsi:type="iStarMetamodel:Role" isA="830b5ef8-0f41-4a17-ba2a-ba4a8f4e799b" id="c7b6f310-8fab-4181-8323-a4190cd35c26" name="PhD student"/>
+  <actors xsi:type="iStarMetamodel:Agent" id="77f4dfe4-1af2-4271-bbfa-0f5892cad0e4" participatesIn="c7b6f310-8fab-4181-8323-a4190cd35c26" name="Mike White"/>
+  <actors xsi:type="iStarMetamodel:Agent" id="a0b5233e-414b-4c96-b87c-45d3167c1ea6" name="Univ. of Wonder-Land"/>
+  <actors id="3c57900f-ba6a-4277-ba86-a688b23628a8" name="Travel agency">
+    <wants xsi:type="iStarMetamodel:Task" name="Book bundle via expedia" id="9544119c-dd79-417e-8a19-6f67455d784b"/>
+  </actors>
+</iStarMetamodel:IStarModel>

@@ -1,0 +1,125 @@
+<feature_model name="MASPLagentsevolve">
+<meta>
+<data name="creator">fm2splot converter tool</data>
+<data name="date">2019-03-19</data>
+<data name="organization">CAOSD group (Universidad de Malaga)</data>
+<data name="address">Malaga (Spain)</data>
+<data name="website">http://caosd.lcc.uma.es/</data>
+</meta>
+<feature_tree>
+:r MyFeatureRoot (MyFeatureRoot)
+	:g [1,*]
+		: ApplianceBasicController (_8299E3AaAc2648Eb92D43247902F8285)
+			:m ApplianceBasicControllerGoals (ApplianceBasicControllerGoals)
+				:o ApplianceSmartControl (_C88Ad9416Bad42CfA159C9Da7C48D5A8)
+				:o SmartPowerMonitoring (_E1C1459747574419Ab21Ea876F3Fb6F1)
+				:o SmartApplianceMonitoring (_2234C068F3C6479085DbC8Bdc7D2A5Fc)
+				:o ApplianceControlled (_9225EbdbDb51449E8D7AB6095E0E1477)
+				:o PowerConsumptionMonitored (_3E3E7C32144749D4A078A6B7F17Cf4C3)
+				:o ApplianceStatusChecked (_09Efb19F35494Ca885C236C6Ca7Abc65)
+			:o ApplianceBasicControllerPlans (ApplianceBasicControllerPlans)
+				:o MonitorPowerConsumption (_61B2F3207Cb64D2E9Ba2F2Fdf737F97E)
+				:o CheckApplianceOperation (_A8A60Cea56404F5C84007Da4577F40E3)
+				:o NotifyState (_B77A89Ba60E84FadB164Ae29B2B49585)
+				:o OnDemand (_660Af2E123Ed4Ea19Bdd913A7D4577C7)
+				:o Programmed (_7387De73D8Cc40D8B0619801C28Efb8B)
+				:o NotifyPowerConsumption (_7Faeed93C26D47FeA5B97C730A8D6A7C)
+			:o ApplianceBasicControllerContext (ApplianceBasicControllerContext)
+				:o PowerConsumption (_32097Aa06E914D52B1C5838206D366F7)
+				:o ApplianceState (_C08Fb2A0A28F407897C648C59D359F4D)
+			:o ApplianceBasicControllerQAs (ApplianceBasicControllerQAs)
+		: WasherAdvancedController (_2Cbee5AfA5F94Af5A4Ca1F0471B6774E)
+			:m WasherAdvancedControllerGoals (WasherAdvancedControllerGoals)
+				:o SmartWaterMonitoring (_2E0Fd6F1F7E14Ced8Ae3D55551918662)
+				:o WaterConsumptionMonitoring (_041Defd01F514Ab58754Faed9594Ba08)
+			:o WasherAdvancedControllerPlans (WasherAdvancedControllerPlans)
+				:o MonitorWaterConsumption (_5361E1Cc2Efa40609F0A3Eea0B8C5Dc5)
+				:o NotifyWaterConsumption (_992411E7A29A46F6A629855120Dbb68F)
+			:o WasherAdvancedControllerContext (WasherAdvancedControllerContext)
+			:o WasherAdvancedControllerQAs (WasherAdvancedControllerQAs)
+		: CookingAdvancedController (_Db47D0Cc613640208Fcd9F07Ab3D7208)
+			:m CookingAdvancedControllerGoals (CookingAdvancedControllerGoals)
+			:o CookingAdvancedControllerPlans (CookingAdvancedControllerPlans)
+			:o CookingAdvancedControllerContext (CookingAdvancedControllerContext)
+			:o CookingAdvancedControllerQAs (CookingAdvancedControllerQAs)
+		: GreenManager (_0B8Bc0Fc29Bc469287C2F8Eb2C65178C)
+			:m GreenManagerGoals (GreenManagerGoals)
+				:o PowerConsumptionManaged (_F9602F879Edd4498Bfdb5F394978D50E)
+					:m OperationScheduleExecuted (_84E9781127Be4F71884541C006C4Cb39)
+						:m ApplianceOperationsScheduled (_Ca5702C1Ef194Db08B9D46E2B5F1D713)
+						:m ApplianceOperationCoordinated (_Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee)
+					:m OperationScheduleGenerated (_1Ffe2B007822438BAa08Ea9821Da7D9C)
+						:m ScheduleObtained (_44E8149FAff74567B573Bb8Ae1957F5F)
+						:m SchedulingStrategySelected (_05083C15E8A042D689F8A0Af50514D9B)
+							:g [1,1]
+								: AdaptToUserPreferences (_F9Dc11657E074FcdA11FE6C469160F65)
+								: AdaptToUserNeeds (_D404003E13Bc4401Bb9F83812E449F5C)
+								: AdaptToEnergyTariff (_24E8Fe0757Fe47749E7FBbe353Bda95A)
+								: TradeOffConfortEfficiency (_A2558Ca354C448Db9A5504966F9F5681)
+								: AdaptedToPowerLimit (_0Ff46Abe66Ff48A7857EFe2463Cba0Fa)
+						:m ApplianceDataCollected (_1A526337A1F14A6EBb324E572Ecbba62)
+				:o WaterConsumptionManaged (_4Db137D8F68D4032936B721801A1E551)
+				:o FaultControl (_A0274069117F42E5B36B7818Ad639365)
+					:m FaultCorrected (_3Aeb5E0EFbad4Ddd8F7DE5E983C49E81)
+						:g [1,1]
+							: ByUser (_B953F63838D04579Aab3Eae70Df49725)
+							: ByST (_6193E95FB14942D2Ae7926Ee061Ee07C)
+				:o WaterConsumptionManaged (_06F5719CB3Ff4A168Dab6Ac6Aa38Fcfc)
+					:m OperationScheduleGenerated (_574D7Dc9E9Ca4BbdBa15E2E4256Acb73)
+					:m OperationScheduleExecuted (_D316Bc8BBb00489E84Bd14235F82Cd2F)
+			:o GreenManagerPlans (GreenManagerPlans)
+				:o ValidateSchedule (_590816A183F44D908Dc8E3220A07Df0B)
+				:o CollectApplianceStatus (_D1B9A56A81Eb48Ce95328E4815F40Aa1)
+				:o ScheduleOperationRemotely (_1E35530280B749Eb838330B09Acde229)
+				:o UserConfirms (_3C5CafdfFa1D4Af880Da60042Bc5Dedf)
+				:o SystemConfirms (_082825DaE65D43CdA278De98A420191F)
+				:o ScheduleOperationManually (_03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0)
+				:o DetectFault (_Ee262Ff8671C476E91C732Ab9A58C619)
+				:o NotifyFault (_1E4243DbB20F4376A266A486Cdc76F52)
+			:o GreenManagerContext (GreenManagerContext)
+			:o GreenManagerQAs (GreenManagerQAs)
+				:o UserComfort (_7F3F9Ee0751B4B8682Be6Ed3C5115D6D)
+				:o EnergyEfficiency (_7A6Ade96836F40F1A73D4Bbe03Cb3904)
+				:o SustainableHome (_45C76D0A85314368A48207754663F4Cf)
+				:o AvoidPowerInterruption (_9F4C45C479A84700A324Cc9Bc41160Ec)
+				:o WaterSaving (_3464039DDb2C4Ceb9C59Ff702A6666F3)
+		: ElectricCompany (_Ee754Cbb167F474FA5947C24881649B6)
+			:m ElectricCompanyGoals (ElectricCompanyGoals)
+			:o ElectricCompanyPlans (ElectricCompanyPlans)
+			:o ElectricCompanyContext (ElectricCompanyContext)
+				:o EnergyTariff (_92C8Ba73Be4F4A6286247F12Fb046D0B)
+				:o PowerLimitContracted (_F6D03A16Bef14E77925784Dc9D64A3D0)
+			:o ElectricCompanyQAs (ElectricCompanyQAs)
+</feature_tree>
+<constraints>
+C1: ~_660Af2E123Ed4Ea19Bdd913A7D4577C7 or ~_7387De73D8Cc40D8B0619801C28Efb8B
+C2: (_590816A183F44D908Dc8E3220A07Df0B or ~_Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee)
+C3: (_A8A60Cea56404F5C84007Da4577F40E3 or ~_2234C068F3C6479085DbC8Bdc7D2A5Fc)
+C4: _7A6Ade96836F40F1A73D4Bbe03Cb3904 or ~_24E8Fe0757Fe47749E7FBbe353Bda95A
+C5: (_1E4243DbB20F4376A266A486Cdc76F52 or ~_A0274069117F42E5B36B7818Ad639365)
+C6: (_61B2F3207Cb64D2E9Ba2F2Fdf737F97E or ~_E1C1459747574419Ab21Ea876F3Fb6F1)
+C7: _9F4C45C479A84700A324Cc9Bc41160Ec or ~_0Ff46Abe66Ff48A7857EFe2463Cba0Fa
+C8: _660Af2E123Ed4Ea19Bdd913A7D4577C7 or _7387De73D8Cc40D8B0619801C28Efb8B or ~_C88Ad9416Bad42CfA159C9Da7C48D5A8
+C9: (_5361E1Cc2Efa40609F0A3Eea0B8C5Dc5 or ~_2E0Fd6F1F7E14Ced8Ae3D55551918662)
+C10: _9F4C45C479A84700A324Cc9Bc41160Ec or ~_A0274069117F42E5B36B7818Ad639365
+C11: ~_082825DaE65D43CdA278De98A420191F or ~_3C5CafdfFa1D4Af880Da60042Bc5Dedf
+C12: _32097Aa06E914D52B1C5838206D366F7 or ~_61B2F3207Cb64D2E9Ba2F2Fdf737F97E
+C13: ~_03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0 or ~_1E35530280B749Eb838330B09Acde229
+C14: _7F3F9Ee0751B4B8682Be6Ed3C5115D6D or ~_F9Dc11657E074FcdA11FE6C469160F65
+C15: _45C76D0A85314368A48207754663F4Cf or ~_3464039DDb2C4Ceb9C59Ff702A6666F3
+C16: _C08Fb2A0A28F407897C648C59D359F4D or ~_A8A60Cea56404F5C84007Da4577F40E3
+C17: _45C76D0A85314368A48207754663F4Cf or ~_7A6Ade96836F40F1A73D4Bbe03Cb3904
+C18: _7F3F9Ee0751B4B8682Be6Ed3C5115D6D or ~_D404003E13Bc4401Bb9F83812E449F5C
+C19: _7F3F9Ee0751B4B8682Be6Ed3C5115D6D or ~_3C5CafdfFa1D4Af880Da60042Bc5Dedf
+C20: _7A6Ade96836F40F1A73D4Bbe03Cb3904 or ~_082825DaE65D43CdA278De98A420191F
+C21: _082825DaE65D43CdA278De98A420191F or _3C5CafdfFa1D4Af880Da60042Bc5Dedf or ~_44E8149FAff74567B573Bb8Ae1957F5F
+C22: _3464039DDb2C4Ceb9C59Ff702A6666F3 or ~_06F5719CB3Ff4A168Dab6Ac6Aa38Fcfc
+C23: _7F3F9Ee0751B4B8682Be6Ed3C5115D6D or ~_9F4C45C479A84700A324Cc9Bc41160Ec
+C24: _03F6Bbd4A7B64Ddb85Ab4C016Fb3F5E0 or _1E35530280B749Eb838330B09Acde229 or ~_Ca5702C1Ef194Db08B9D46E2B5F1D713
+C25: (_D1B9A56A81Eb48Ce95328E4815F40Aa1 or ~_Ea947D7D4Cbf476AA5Ce1Aa65D3D3Cee)
+C26: (_B77A89Ba60E84FadB164Ae29B2B49585 or ~_2234C068F3C6479085DbC8Bdc7D2A5Fc)
+C27: (_Ee262Ff8671C476E91C732Ab9A58C619 or ~_A0274069117F42E5B36B7818Ad639365)
+C28: (_7Faeed93C26D47FeA5B97C730A8D6A7C or ~_E1C1459747574419Ab21Ea876F3Fb6F1)
+C29: (_992411E7A29A46F6A629855120Dbb68F or ~_2E0Fd6F1F7E14Ced8Ae3D55551918662)
+</constraints>
+</feature_model>

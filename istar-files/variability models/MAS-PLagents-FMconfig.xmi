@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<featureModelMetamodel:ConfigurationModel xmlns:featureModelMetamodel="http://caosd.lcc.uma.es/featureModelMetamodel" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="SiemensConnectedOven_1" instance="1" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#_Db47D0Cc613640208Fcd9F07Ab3D7208" xsi:type="featureModelMetamodel:ClonableFeature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="CookingAdvancedControllerGoals_1" instance="1" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#CookingAdvancedControllerGoals" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="CookingAdvancedControllerPlans_1" instance="1" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#CookingAdvancedControllerPlans" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="CookingAdvancedControllerContext_1" instance="1" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#CookingAdvancedControllerContext" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="CookingAdvancedControllerQAs_1" instance="1" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#CookingAdvancedControllerQAs" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="SamsungSmartWasher_2" instance="2" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#_2Cbee5AfA5F94Af5A4Ca1F0471B6774E" xsi:type="featureModelMetamodel:ClonableFeature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="WasherAdvancedControllerGoals_2" instance="2" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#WasherAdvancedControllerGoals" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="WasherAdvancedControllerPlans_2" instance="2" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#WasherAdvancedControllerPlans" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="WasherAdvancedControllerContext_2" instance="2" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#WasherAdvancedControllerContext" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+  <selections xsi:type="featureModelMetamodel:ClonableSelection" name="WasherAdvancedControllerQAs_2" instance="2" state="selected">
+    <feature href="MAS-PLagents-FM.xmi#WasherAdvancedControllerQAs" xsi:type="featureModelMetamodel:Feature"/>
+  </selections>
+</featureModelMetamodel:ConfigurationModel>
