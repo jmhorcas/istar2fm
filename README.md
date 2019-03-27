@@ -94,12 +94,12 @@ Output:
 
 ### Algorithms performance evaluation (evaluation.py)
 Usage:
-    ```python evaluation.py
+    ```python evaluation.py```
 	
 Output:
-    *<statistics-ALG1.csv>* is the performance statistics file in .csv for the Algorithm 1.
-	*<statistics-ALG2.csv>* is the performance statistics file in .csv for the Algorithm 2.
-	*<statistics-ALG3.csv>* is the performance statistics file in .csv for the Algorithm 3.
+    *<statistics-ALG1.csv>* is the performance statistics file in .csv for the Algorithm 1.  
+	*<statistics-ALG2.csv>* is the performance statistics file in .csv for the Algorithm 2.  
+	*<statistics-ALG3.csv>* is the performance statistics file in .csv for the Algorithm 3.  
 	
 
 ## References
